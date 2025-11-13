@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class level : MonoBehaviour
 {
-    [SerializeField] private bool _Allminerals = false;
+    public  bool _Allminerals = false;
     [SerializeField] private GameObject _UINextLevel;
     /// <summary>
     /// after the check it load the new level 

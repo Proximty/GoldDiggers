@@ -19,7 +19,7 @@ public class resetcanvas : MonoBehaviour
     {
         if (NothingTimer > 30)
         {
-
+            Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
         }   
     }
 }

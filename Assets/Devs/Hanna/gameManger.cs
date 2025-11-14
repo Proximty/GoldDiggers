@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class gamemanager : MonoBehaviour
 {
-    private level _level;
-    [SerializeField] private int Stones = 5;
+    [SerializeField] private level _level;
+    [SerializeField] private int Stones = 0;
     public int StoneCount = 0;
     public GameObject[] _SpawnMinerals;
     private void Update()

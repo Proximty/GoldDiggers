@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    public GameObject _canvas;
+    public GameObject Canvas;
     public void Restart()
     {
         SceneManager.LoadScene("");
@@ -12,6 +12,6 @@ public class Buttons : MonoBehaviour
 
     public void Continue()
     {
-        _canvas.SetActive(false);
+        Canvas.SetActive(false);
     }   
 }

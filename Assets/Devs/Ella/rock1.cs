@@ -14,11 +14,11 @@ public class rock1 : MonoBehaviour, IBreakable
         switch (_stageRock)
         {
             case 1:
-                SetTransfromOfRock(0.8480377f);
+                SetTransfromOfRock(1.6960754f);
                 _stageRock++;
                 break;
             case 2:
-                SetTransfromOfRock(0.5927531f);
+                SetTransfromOfRock(1.1855062f);
                 _stageRock++;
                 break;
             case 3:

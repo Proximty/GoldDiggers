@@ -4,10 +4,17 @@ using UnityEngine;
 public class pickup : MonoBehaviour
 {
     [SerializeField] private gamemanager _manager;
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        _manager.StoneCount++;
+        Debug.Log("PickedUp ");
+        StoneCount();
+       
         Destroy(gameObject);
     }
+    private void StoneCount() 
+    {
+        _manager.StoneCount++;
+    }
 }
+
 

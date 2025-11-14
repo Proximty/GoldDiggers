@@ -14,7 +14,7 @@ public class level : MonoBehaviour
     /// </summary>
     public void Stones()
     {
-        _Manager._SpawnMinerals(Random.Range(0, 10));
+        //_Manager._SpawnMinerals(Random.Range(0, 10));
         if (_Allminerals == true)
         {
             _UINextLevel.SetActive(true);

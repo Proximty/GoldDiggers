@@ -1,25 +1,19 @@
+using System.Collections;
 using UnityEngine;
 
 public class resetcanvas : MonoBehaviour
 {
-    public int NothingTimer;
-
-    void Start()
-    {
-        NothingTimer = 0;
-    }
-
-
+    //public float _NothingTimer;
+    public GameObject _canvas;
+    public float _timerDuration = 3f;
     void Update()
     {
-        
+        StartCoroutine(NothingTimer());
     }
 
-    void SpawnCanvas()
+    private IEnumerator NothingTimer()
     {
-        if (NothingTimer > 30)
-        {
-            Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
-        }   
+        yield return new WaitForSeconds(_timerDuration);
+        _canvas.SetActive(true);
     }
 }

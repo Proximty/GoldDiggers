@@ -3,10 +3,6 @@ using UnityEngine;
 public class MoveGameobject : MonoBehaviour
 {
     [SerializeField] private bool _isDragging = true;
-    [SerializeField] public bool OnItem = false;
-    [SerializeField] private brush Brush;
-    [SerializeField] private rock1 _rockScript;
-    [SerializeField] private dirt _dirtScipt;
 
     // Update is called once per frame
     void Update()
@@ -17,32 +13,8 @@ public class MoveGameobject : MonoBehaviour
     
     private void OnMouseDown()
     {
-        //if (OnItem == true)
-        //{
-        //    Brush.PlayerWantsToBrush = true;
-        //}
-        if(this.gameObject.name == "axe")
-        {
-            //Debug.Log("using axe");
-            if (_rockScript.InRockArea)
-            {
-                _rockScript.Break();
-            }
-            //check if u are in the triggered area
-            //if u are in the triggered area then activate the function
-
-        }
-        else if(this.gameObject.name == "brush")
-        {
-            //Debug.Log("using brush");
-            Debug.Log("InBrushArea = " + _dirtScipt.InBrushArea);
-            if (_dirtScipt.InBrushArea)
-            {
-                Debug.Log("brushing");
-                _dirtScipt.Brush();
-            }
-        }
-            _isDragging = !_isDragging;
+        
+        _isDragging = !_isDragging;
     }
 
     private void OnMouseUp()

@@ -9,6 +9,24 @@ public class rock1 : MonoBehaviour, IBreakable
 {
     [SerializeField] private GameObject _dirt;
     [SerializeField] private int _stageRock = 1;
+    public bool InRockArea = false;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "axe")
+        {
+            //Debug.Log("u enetered the rock area");
+            InRockArea=true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "axe")
+        {
+            //Debug.Log("u exited the rock area");
+            InRockArea=false;
+        }
+    }
     public void Break()
     {
         switch (_stageRock)

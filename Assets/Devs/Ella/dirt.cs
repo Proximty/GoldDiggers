@@ -10,6 +10,24 @@ public class dirt : MonoBehaviour,IBrushable
     [SerializeField] private GameObject _gem;
     [SerializeField] private GameObject _stoneInfo;
     [SerializeField] private int _stageDirt = 1;
+    public bool InBrushArea = false;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "brush")
+        {
+            Debug.Log("u enetered the brush area");
+            InBrushArea = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "brush")
+        {
+            Debug.Log("u exited the brush area");
+            InBrushArea = false;
+        }
+    }
     public void Brush()
     {
         if (this.gameObject.activeSelf == true)
@@ -17,11 +35,11 @@ public class dirt : MonoBehaviour,IBrushable
             switch (_stageDirt)
             {
                 case 1:
-                    SetTransfromOfRock(0.3f);
+                    SetTransfromOfRock(0.6f);
                     _stageDirt++;
                     break;
                 case 2:
-                    SetTransfromOfRock(0.1f);
+                    SetTransfromOfRock(0.3f);
                     _stageDirt++;
                     break;
                 case 3:

@@ -25,7 +25,7 @@ public class BrushManager : MonoBehaviour
         ActiveBrush = true;
         if (_diggingManagerScipt != null)
         {
-            _diggingManagerScipt.AxeActive = false;
+            DiggingManager.AxeActive = false;
         }
 
     }

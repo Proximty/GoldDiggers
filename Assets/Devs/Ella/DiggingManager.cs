@@ -4,15 +4,12 @@ using UnityEngine.InputSystem;
 
 public class DiggingManager : MonoBehaviour
 {
-    public bool AxeActive = false;
+    public static bool AxeActive = false;
     [SerializeField] private rock1 _rockScipt;
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _axePrefab;
     [SerializeField] private BrushManager _brushManagerScript;
-    private void Start()
-    {
-        _rockScipt = this.gameObject.GetComponent<rock1>();
-    }
+   
 
     private void Update()
     {
@@ -36,6 +33,10 @@ public class DiggingManager : MonoBehaviour
             _rockScipt.Break();
             //activate axe anim
             Instantiate(_axePrefab);
+            //verplaats gameobejct 
+
+            Vector3 _objTransform = this.gameObject.transform.position;
+            this.gameObject.transform.position = new Vector3(_objTransform.x + 0.2f, _objTransform.y + 0.2f, _objTransform.z);
             _timer = 0f;
         }
         

@@ -4,14 +4,13 @@ using UnityEngine.InputSystem;
 
 public class DiggingManager : MonoBehaviour
 {
-    [SerializeField] private bool _axeActive = false;
+    public bool AxeActive = false;
     [SerializeField] private rock1 _rockScipt;
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _axePrefab;
-    private Camera _mainCamera;
+    [SerializeField] private BrushManager _brushManagerScript;
     private void Start()
     {
-        _mainCamera = Camera.main;
         _rockScipt = this.gameObject.GetComponent<rock1>();
     }
 
@@ -24,14 +23,15 @@ public class DiggingManager : MonoBehaviour
 
     public void enableAxe()
     {
-        _axeActive = true;
+        AxeActive = true;
+        _brushManagerScript.ActiveBrush = false;
     }
 
     
     private void OnMouseDown()
     {
         Debug.Log("Plz Dig");
-        if(_axeActive == true && _timer >=0.3f)
+        if(AxeActive == true && _timer >=0.3f)
         {
             _rockScipt.Break();
             //activate axe anim

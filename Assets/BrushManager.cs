@@ -2,15 +2,42 @@ using UnityEngine;
 
 public class BrushManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool ActiveBrush = false;
+    [SerializeField] private DiggingManager _diggingManagerScipt;
+    private dirt _dirtScript;
+    [SerializeField] private GameObject _brushPrefab;
+    [SerializeField] private float _timer;
+
+    private void Start()
     {
-        
+        _dirtScript = this.gameObject.GetComponent<dirt>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        //update digging timer for animation
+        _timer += Time.deltaTime;
+
+    }
+
+    public void EnableBrush()
+    {
+        ActiveBrush = true;
+        if (_diggingManagerScipt != null)
+        {
+            _diggingManagerScipt.AxeActive = false;
+        }
+
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Plz brush");
+        if (ActiveBrush == true && _timer >= 0.5f)
+        {
+            _dirtScript.Brush();
+            Instantiate(_brushPrefab);
+            _timer = 0f;
+        }
     }
 }

@@ -30,6 +30,11 @@ public class BrushManager : MonoBehaviour
 
     }
 
+    public void disableBrush()
+    {
+        ActiveBrush = false;
+    }
+
     private void OnMouseDown()
     {
         Debug.Log("Plz brush");

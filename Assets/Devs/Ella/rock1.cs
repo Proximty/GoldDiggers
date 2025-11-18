@@ -24,7 +24,6 @@ public class rock1 : MonoBehaviour, IBreakable
                 _stageRock++;
                 break;
             case 3:
-                Debug.Log("The rock breaks");
                 _dirt.SetActive(true);
                 Destroy(this.gameObject);
                 break;

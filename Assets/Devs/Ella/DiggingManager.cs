@@ -1,6 +1,7 @@
 using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 
 
 public class DiggingManager : MonoBehaviour
@@ -11,37 +12,19 @@ public class DiggingManager : MonoBehaviour
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _axePrefab;
     [SerializeField] private BrushManager _brushManagerScript;
+    
 
     //[Header("Input")]
     //[SerializeField] private Vector2 screenPos;
+
+    
 
     void Update()
     {
 
         _timer += Time.deltaTime;
-
-
-        // Touch input
-        if ((Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed))
-        {
-            Debug.Log("Touch detected");
-
-            //screenPos = Touchscreen.current.primaryTouch.position.ReadValue();
-
-        }
-        if (Mouse.current != null && Mouse.current.leftButton.isPressed)
-        {
-            
-            Debug.Log(
-            Camera.main.ScreenPointToRay(Input.mousePosition));
-
-            
-
-            
-
-
-
-        }
+       
+        
     }
 
 
@@ -69,10 +52,7 @@ public class DiggingManager : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos()
-    {
-        
-    }
+    
 
 
 }

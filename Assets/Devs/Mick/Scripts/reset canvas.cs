@@ -4,8 +4,8 @@ using UnityEngine;
 public class resetcanvas : MonoBehaviour
 {
     //public float _NothingTimer;
-    public GameObject _canvas;
-    public float _timerDuration = 3f;
+    public GameObject Canvas;
+    public float TimerDuration = 3f;
     void Update()
     {
         StartCoroutine(NothingTimer());
@@ -13,7 +13,8 @@ public class resetcanvas : MonoBehaviour
 
     private IEnumerator NothingTimer()
     {
-        yield return new WaitForSeconds(_timerDuration);
-        _canvas.SetActive(true);
+        yield return new WaitForSeconds(TimerDuration);
+        Canvas.SetActive(true);
+        TimerDuration = 10f; 
     }
 }

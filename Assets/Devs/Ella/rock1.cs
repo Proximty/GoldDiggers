@@ -7,10 +7,17 @@ public class rock1 : MonoBehaviour, IBreakable
     [SerializeField] private int _stageRock = 1;
     [SerializeField] private GameObject _daROCK;
     [SerializeField] public bool ActiveAxe = false;
+    [SerializeField] private GameObject _axePrefab;
+    [SerializeField] private float _timer;
 
     /// <summary>
     /// this makes the rock breaks 
     /// </summary>
+    /// 
+    private void Update()
+    {
+        _timer += Time.deltaTime;
+    }
     public void Break(int powerLevel)
     {
         if (ActiveAxe == true)
@@ -32,8 +39,16 @@ public class rock1 : MonoBehaviour, IBreakable
             }
             Vector3 _objTransform = this.gameObject.transform.position;
             this.gameObject.transform.position = new Vector3(_objTransform.x + 0.2f, _objTransform.y + 0.2f, _objTransform.z);
+
+            //activate axe anim
+            Instantiate(_axePrefab);
         }
 
+    }
+
+    public void ActivateAxe(bool truethness)
+    {
+        ActiveAxe = truethness;
     }
 
     //fucntion to change the size of the rock and the y rotation

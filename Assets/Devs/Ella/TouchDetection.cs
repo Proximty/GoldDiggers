@@ -8,8 +8,6 @@ public class TouchDetection : MonoBehaviour
 
     private void Start()
     {
-
-
         // LineRenderer instellingen
         _lineRenderer.startWidth = 0.005f;
         _lineRenderer.endWidth = 0.002f;
@@ -24,7 +22,7 @@ public class TouchDetection : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             if (touch.phase == UnityEngine.TouchPhase.Began)
             {
-                Debug.Log("screenw as touched");
+                Debug.Log("screen was touched");
                 DetectObject(touch.position);
             }
         }
@@ -67,7 +65,5 @@ public class TouchDetection : MonoBehaviour
             _lineRenderer.SetPosition(1, ray.origin + ray.direction * 10f);
             Debug.Log("No object detected");
         }
-
-
     }
 }

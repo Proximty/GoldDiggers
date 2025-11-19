@@ -16,15 +16,7 @@ public class DiggingManager : MonoBehaviour
         //update digging timer for animation
         _timer += Time.deltaTime;
         
-    }
-
-    public void enableAxe()
-    {
-        AxeActive = true;
-        _brushManagerScript.ActiveBrush = false;
-    }
-
-    
+    }  
     private void OnMouseDown()
     {
         Debug.Log("Plz Dig");
@@ -40,5 +32,13 @@ public class DiggingManager : MonoBehaviour
             _timer = 0f;
         }
         
+    }
+    /// <summary>
+    /// selects de Axe
+    /// </summary>
+    public void enableAxe()
+    {
+        AxeActive = true;
+        _brushManagerScript.ActiveBrush = false;
     }
 }

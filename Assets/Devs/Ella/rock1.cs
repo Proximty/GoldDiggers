@@ -10,7 +10,9 @@ public class rock1 : MonoBehaviour, IBreakable
     [SerializeField] private GameObject _dirt;
     [SerializeField] private int _stageRock = 1;
 
-    
+    /// <summary>
+    /// this makes the rock breaks 
+    /// </summary>
     public void Break()
     {
         switch (_stageRock)

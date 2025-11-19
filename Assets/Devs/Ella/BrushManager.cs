@@ -19,22 +19,6 @@ public class BrushManager : MonoBehaviour
         _timer += Time.deltaTime;
 
     }
-
-    public void EnableBrush()
-    {
-        ActiveBrush = true;
-        if (_diggingManagerScipt != null)
-        {
-            DiggingManager.AxeActive = false;
-        }
-
-    }
-
-    public void disableBrush()
-    {
-        ActiveBrush = false;
-    }
-
     private void OnMouseDown()
     {
         Debug.Log("Plz brush");
@@ -45,4 +29,25 @@ public class BrushManager : MonoBehaviour
             _timer = 0f;
         }
     }
+    /// <summary>
+    /// this selects the brush 
+    /// </summary>
+    public void EnableBrush()
+    {
+        ActiveBrush = true;
+        if (_diggingManagerScipt != null)
+        {
+            DiggingManager.AxeActive = false;
+        }
+
+    }
+    /// <summary>
+    /// this diselects the brush
+    /// </summary>
+    public void disableBrush()
+    {
+        ActiveBrush = false;
+    }
+
+    
 }

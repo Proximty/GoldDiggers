@@ -11,7 +11,9 @@ public class dirt : MonoBehaviour,IBrushable
     [SerializeField] private GameObject _stoneInfo;
     [SerializeField] private int _stageDirt = 1;
 
-    
+    /// <summary>
+    /// Make The brush Brush things down
+    /// </summary>
     public void Brush()
     {
         if (this.gameObject.activeSelf == true)
@@ -36,6 +38,10 @@ public class dirt : MonoBehaviour,IBrushable
         }
         
     }
+    /// <summary>
+    /// keeps track of the transform 
+    /// </summary>
+    /// <param name="size"></param>
     private void SetTransfromOfRock(float size)
     {
         this.gameObject.transform.localScale = new Vector3(size, size, size);

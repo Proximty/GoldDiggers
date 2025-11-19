@@ -3,9 +3,7 @@ using UnityEngine;
 public class MoveGameobject : MonoBehaviour
 {
     [SerializeField] private bool _isDragging = true;
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         DoDraggingLogic();
     }
@@ -22,7 +20,9 @@ public class MoveGameobject : MonoBehaviour
         
         _isDragging = !_isDragging;
     }
-
+    /// <summary>
+    /// this drags the image
+    /// </summary>
     private void DoDraggingLogic()
     {
         if (_isDragging)

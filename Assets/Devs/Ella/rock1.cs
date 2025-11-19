@@ -1,10 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public interface IBreakable
-{
-    void Break();
-}
 public class rock1 : MonoBehaviour, IBreakable
 {
     [SerializeField] private GameObject _dirt;
@@ -13,7 +9,7 @@ public class rock1 : MonoBehaviour, IBreakable
     /// <summary>
     /// this makes the rock breaks 
     /// </summary>
-    public void Break()
+    public void Break(int powerLevel)
     {
         switch (_stageRock)
         {
@@ -29,8 +25,7 @@ public class rock1 : MonoBehaviour, IBreakable
                 _dirt.SetActive(true);
                 Destroy(this.gameObject);
                 break;
-        }
-                
+        }      
     }
 
     //fucntion to change the size of the rock and the y rotation
@@ -38,6 +33,5 @@ public class rock1 : MonoBehaviour, IBreakable
     {
         this.gameObject.transform.localScale = new Vector3(size, size, size);
         //this.gameObject.transform.eulerAngles = new Vector3 (0, rotation, 0);
-
     }
 }

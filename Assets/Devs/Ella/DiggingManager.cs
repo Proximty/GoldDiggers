@@ -31,7 +31,6 @@ public class DiggingManager : MonoBehaviour
             this.gameObject.transform.position = new Vector3(_objTransform.x + 0.2f, _objTransform.y + 0.2f, _objTransform.z);
             _timer = 0f;
         }
-        
     }
     /// <summary>
     /// selects de Axe

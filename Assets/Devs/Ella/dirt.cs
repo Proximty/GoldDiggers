@@ -5,7 +5,7 @@ public interface IBrushable
 {
     public void Brush();
 }
-public class dirt : MonoBehaviour,IBrushable
+public class dirt : MonoBehaviour, IBrushable
 {
     [SerializeField] private GameObject _gem;
     [SerializeField] private GameObject _stoneInfo;
@@ -35,6 +35,7 @@ public class dirt : MonoBehaviour,IBrushable
                     Destroy(this.gameObject);
                     break;
             }
+
         }
         
     }

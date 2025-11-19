@@ -25,6 +25,7 @@ public class TouchDetection : MonoBehaviour
             if (touch.phase == UnityEngine.TouchPhase.Began)
             {
                 Debug.Log("screenw as touched");
+                DetectObject(touch.position);
             }
         }
         if (Input.GetMouseButtonDown(0))
@@ -47,6 +48,18 @@ public class TouchDetection : MonoBehaviour
             Debug.Log("Hit object: " + hit.collider.gameObject.name);
             // Line ends at the hit point
             _lineRenderer.SetPosition(1, hit.point);
+
+            GameObject hitOBJ = hit.collider.gameObject;
+
+            IBreakable breakable = hitOBJ.GetComponent<IBreakable>();
+            if( breakable != null)
+            {
+                breakable.Break(1);
+            }
+            else
+            {
+                Debug.Log("no breakable/brushable found!");
+            }
         }
         else
         {

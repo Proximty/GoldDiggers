@@ -281,7 +281,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 892161694}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DiggingManager, Assembly-CSharp
         m_MethodName: enableAxe
         m_Mode: 1
@@ -421,10 +421,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 892161693}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1251673099}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
 --- !u!1 &439376600
 GameObject:
@@ -1161,8 +1158,8 @@ GameObject:
   m_Component:
   - component: {fileID: 892161693}
   - component: {fileID: 892161696}
-  - component: {fileID: 892161694}
   - component: {fileID: 892161697}
+  - component: {fileID: 892161698}
   m_Layer: 0
   m_Name: moving point
   m_TagString: Untagged
@@ -1185,22 +1182,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1251673094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &892161694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892161692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd4df86fd16cbf4387b597d527afcf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rockScipt: {fileID: 1251673099}
-  _timer: 0
-  _axePrefab: {fileID: 3294607929661918594, guid: 832824377ee32054ab694a05e0febe7c, type: 3}
-  _brushManagerScript: {fileID: 1079415412}
 --- !u!212 &892161696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1277,6 +1258,22 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.50000024
   m_Center: {x: 0, y: -0.00000059604645, z: -0.00000047683716}
+--- !u!114 &892161698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892161692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b40f723ab29be48bc9806594d63531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dirt: {fileID: 1079415407}
+  _stageRock: 1
+  _daROCK: {fileID: 1251673093}
+  ActiveAxe: 0
 --- !u!1 &1079415407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,20 +1451,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
   m_PrefabInstance: {fileID: 387667405}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1251673099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251673093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4b40f723ab29be48bc9806594d63531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dirt: {fileID: 1079415407}
-  _stageRock: 1
 --- !u!1 &1400130355
 GameObject:
   m_ObjectHideFlags: 0

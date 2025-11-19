@@ -14,11 +14,6 @@ public class DiggingManager : MonoBehaviour
     [SerializeField] private BrushManager _brushManagerScript;
     
 
-    //[Header("Input")]
-    //[SerializeField] private Vector2 screenPos;
-
-    
-
     void Update()
     {
 

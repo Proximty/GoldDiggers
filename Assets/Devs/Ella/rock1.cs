@@ -20,7 +20,7 @@ public class rock1 : MonoBehaviour, IBreakable
     }
     public void Break(int powerLevel)
     {
-        if (ActiveAxe == true)
+        if (ActiveAxe == true && _timer > 0.3f)
         {
             switch (_stageRock)
             {
@@ -42,14 +42,16 @@ public class rock1 : MonoBehaviour, IBreakable
 
             //activate axe anim
             Instantiate(_axePrefab);
+            _timer = 0f;
         }
 
     }
 
-    public void ActivateAxe(bool truethness)
+    public void AxeAwake(bool awake)
     {
-        ActiveAxe = truethness;
+        ActiveAxe = awake;
     }
+    
 
     //fucntion to change the size of the rock and the y rotation
     private void SetTransfromOfRock(float size)

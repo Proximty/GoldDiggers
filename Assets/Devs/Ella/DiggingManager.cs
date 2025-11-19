@@ -31,8 +31,7 @@ public class DiggingManager : MonoBehaviour
         }
         if (Mouse.current != null && Mouse.current.leftButton.isPressed)
         {
-            //Debug.Log("Mouse Detected");
-            //Debug.Log(Mouse.current.position.ReadValue());
+            
             Debug.Log(
             Camera.main.ScreenPointToRay(Input.mousePosition));
 
@@ -58,7 +57,7 @@ public class DiggingManager : MonoBehaviour
         Debug.Log("Plz Dig");
         if (AxeActive == true && _timer >= 0.3f)
         {
-            _rockScipt.Break();
+            _rockScipt.Break(1);
             //activate axe anim
             Instantiate(_axePrefab);
             //verplaats gameobejct 

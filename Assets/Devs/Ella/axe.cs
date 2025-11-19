@@ -3,7 +3,7 @@ using UnityEngine;
 public class axe : MonoBehaviour
 {
     //Power lvl
-    int powerLevel = 2;
+    int powerLevel = 1;
 
     /// <summary>
     /// breaks the stone 
@@ -14,7 +14,7 @@ public class axe : MonoBehaviour
         IBreakable _breakable = collision.GetComponent<IBreakable>();
         if (_breakable != null)
         {
-            _breakable.Break();
+            _breakable.Break(powerLevel);
         }
     }
 }

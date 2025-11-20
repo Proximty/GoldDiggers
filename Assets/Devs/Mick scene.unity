@@ -119,6 +119,70 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24198017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24198018}
+  - component: {fileID: 24198019}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24198018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24198017}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 916.349, y: 507.9576, z: -776.8361}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &24198019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24198017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675589314186a994e9c76d6f8de54cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab1: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+  Prefab2: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+  Prefab3: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
+  Prefab4: {fileID: 0}
+  Prefab5: {fileID: 0}
+  Prefab6: {fileID: 0}
+  Prefab7: {fileID: 0}
+  Prefab8: {fileID: 0}
+  Prefab9: {fileID: 0}
+  Prefab10: {fileID: 0}
+  Chance1: 0
+  Chance2: 1
+  Chance3: 1
+  Chance4: 1
+  Chance5: 1
+  Chance6: 1
+  Chance7: 1
+  Chance8: 1
+  Chance9: 1
+  Chance10: 1
 --- !u!1 &591380089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,3 +1846,4 @@ SceneRoots:
   - {fileID: 1958393506}
   - {fileID: 591380095}
   - {fileID: 1163782994}
+  - {fileID: 24198018}

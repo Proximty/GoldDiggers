@@ -1,65 +1,50 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stonerarity : MonoBehaviour
 {
     [Header("Prefabs")]
-    public GameObject Prefab1;
-    public GameObject Prefab2;
-    public GameObject Prefab3;
-    public GameObject Prefab4;
-    public GameObject Prefab5;
-    public GameObject Prefab6;
-    public GameObject Prefab7;
-    public GameObject Prefab8;
-    public GameObject Prefab9;
-    public GameObject Prefab10;
-
+    [SerializeField] private List<GameObject> prefabs = new List<GameObject>();
+    
     [Header("Spawn Chances (groter is makkelijker te krijgen)")]
-    public float Chance1 = 1f;
-    public float Chance2 = 1f;
-    public float Chance3 = 1f;
-    public float Chance4 = 1f;
-    public float Chance5 = 1f;
-    public float Chance6 = 1f;
-    public float Chance7 = 1f;
-    public float Chance8 = 1f;
-    public float Chance9 = 1f;
-    public float Chance10 = 1f;
+    [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+    
 
     void Start()
     {
+        //it spawns the selected prefab in Start()
         GameObject selectedPrefab = GetRandomPrefab();
         if (selectedPrefab != null)
+        {
             Instantiate(selectedPrefab, transform.position, transform.rotation);
+        }
     }
 
     GameObject GetRandomPrefab()
     {
-        GameObject[] prefabs =
-        {
-            Prefab1, Prefab2, Prefab3, Prefab4, Prefab5,
-            Prefab6, Prefab7, Prefab8, Prefab9, Prefab10
-        };
-
-        float[] chances =
-        {
-            Chance1, Chance2, Chance3, Chance4, Chance5,
-            Chance6, Chance7, Chance8, Chance9, Chance10
-        };
-
+        
         float totalChance = 0f;
-        foreach (float c in chances)
-            totalChance += c;
 
-        float randomValue = Random.Range(0, totalChance);
-
-        for (int i = 0; i < prefabs.Length; i++)
+        //calculate the weight of chance
+        //If you have 10 items each with weight 1, totalChance = 10.
+        foreach (float c  in chance)
         {
-            if (randomValue < chances[i])
-                return prefabs[i];
+            totalChance += c;
+        }
 
-            randomValue -= chances[i];
+        //It picks a random number between 0 and totalChance
+        float randomValue = Random.Range(0f, totalChance);
+
+        int i = 0;
+        //It loops through prefabs and determines which one the random value falls into
+        foreach (GameObject p in prefabs)
+        {
+            if (randomValue < chance[i])
+                return p;
+
+            randomValue -= chance[i];
+            i++;
         }
 
         return null;

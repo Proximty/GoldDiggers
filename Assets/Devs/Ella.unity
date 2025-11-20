@@ -198,88 +198,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &157129581
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 620512909}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4999998
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4999998
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.21621376
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.4132849
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.736547
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1181669388170456213, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 028f68cb24f3e624bafe94d1f6ab62dd, type: 2}
-    - target: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: m_Name
-      value: Ammonite
-      objectReference: {fileID: 0}
-    - target: {fileID: 7071182760956848314, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 028f68cb24f3e624bafe94d1f6ab62dd, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
---- !u!4 &157129582 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-  m_PrefabInstance: {fileID: 157129581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &301885238
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -744,38 +662,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503326005}
   m_CullTransparentMesh: 1
---- !u!1 &620512907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 620512909}
-  m_Layer: 0
-  m_Name: Ammonite Fossiel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &620512909
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620512907}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45378625, y: -2.3132849, z: 9.576548}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 157129582}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625772150
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +702,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625772150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -876,7 +762,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675589314186a994e9c76d6f8de54cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs: []
+  prefabs:
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
+  - {fileID: 5134443879645760484, guid: 9dfff3af22403bf418e8383d2f42abda, type: 3}
   chance:
   - 1
   - 1
@@ -2245,4 +2142,3 @@ SceneRoots:
   - {fileID: 1504667584}
   - {fileID: 743293154}
   - {fileID: 1561015196}
-  - {fileID: 620512909}

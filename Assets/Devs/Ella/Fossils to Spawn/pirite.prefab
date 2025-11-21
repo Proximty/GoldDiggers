@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7159851175253965195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 662b153009c48e0479ae1e1d72962195, type: 2}
+    - target: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: m_Name
+      value: pirite
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 892486664191669958}
+  m_SourcePrefab: {fileID: 100100000, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+--- !u!1 &8042742171320829146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+  m_PrefabInstance: {fileID: 7159851175253965195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &892486664191669958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8042742171320829146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FossilInfo: Je hebt een pyriet kristal gevonden! Dit is een glanzend, goudkleurig
+    mineraal dat al miljoenen jaren geleden diep onder de grond werd gevormd. Deze
+    opvallend heldere kubusjes worden meestal in gesteentelagen of oude mijngebieden
+    gevonden. Hoe ben jij hier terechtgekomen, blinkende vriend?

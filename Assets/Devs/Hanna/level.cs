@@ -5,19 +5,26 @@ using UnityEngine.SceneManagement;
 public class level : MonoBehaviour
 {
     public bool _Allminerals = false;
-    [SerializeField] private GameObject _UINextLevel;
+    public  GameObject _UINextLevel;
     [SerializeField] private gamemanager _Manager;
+    private SpawnGem _spawnGem;
 
-
+    public void Update()
+    {
+        Stones();
+    }
     /// <summary>
     /// after the check it load the new level 
     /// </summary>
+ 
     public void Stones()
     {
-        //_Manager._SpawnMinerals(Random.Range(0, 10));
-        if (_Allminerals == true)
+        if (_spawnGem.Animator.GetBool("Rotation") == true)
         {
-            _UINextLevel.SetActive(true);
+            if (_Allminerals == true)
+            {
+                _UINextLevel.SetActive(true);
+            }
         }
     }
     /// <summary>

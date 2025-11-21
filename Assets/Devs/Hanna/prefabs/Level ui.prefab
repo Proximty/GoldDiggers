@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7358196286839970546}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: level, Assembly-CSharp
         m_MethodName: NextScene
         m_Mode: 1
@@ -145,9 +145,8 @@ GameObject:
   - component: {fileID: 442007064870420236}
   - component: {fileID: 4268511819048907948}
   - component: {fileID: 5897813340551057620}
-  - component: {fileID: 7358196286839970546}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Level ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,21 +235,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7358196286839970546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4348370947159540220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5dd3e93004f31142b259f17d1fcf550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Allminerals: 0
-  _UINextLevel: {fileID: 0}
-  _Manager: {fileID: 0}
 --- !u!1 &9146869933095859028
 GameObject:
   m_ObjectHideFlags: 0

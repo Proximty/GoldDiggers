@@ -71,13 +71,18 @@ public class TouchDetection : MonoBehaviour
             //check of het object dat geraakt heeft gebrushed of gebreaked kan worden
             IBreakable breakable = hitOBJ.GetComponent<IBreakable>();
             IBrushable brushable = hitOBJ.GetComponent<IBrushable>();
-            if( breakable != null)
+            pickup pickup= hitOBJ.GetComponent<pickup>();
+            if ( breakable != null)
             {
                 breakable.Break(1);
             }
             else if (brushable != null)
             {
                 brushable.Brush();
+            }
+            else if (pickup !=null) 
+            {
+                pickup.StoneCount();
             }
             else
             {

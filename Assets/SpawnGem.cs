@@ -9,6 +9,9 @@ public class SpawnGem : MonoBehaviour
     private void Start()
     {
         //set rotation of object
-        //this.gameObject.transform.rotation = 
+        if (this.gameObject.tag == "ammoniet")
+        {
+            this.gameObject.transform.eulerAngles = new Vector3(-90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
+        }
     }
 }

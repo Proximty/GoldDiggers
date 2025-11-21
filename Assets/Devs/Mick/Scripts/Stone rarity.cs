@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class Stonerarity : MonoBehaviour
     
     [Header("Spawn Chances (groter is makkelijker te krijgen)")]
     [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+    [SerializeField] TextMeshProUGUI FossilText;
     
 
     void Start()
@@ -19,6 +21,17 @@ public class Stonerarity : MonoBehaviour
         {
             Instantiate(selectedPrefab, transform.position, transform.rotation);
         }
+        //give the tmp the selectedPrefab text
+        SpawnGem GemScript= selectedPrefab.GetComponent<SpawnGem>();
+        if (GemScript != null)
+        {
+            FossilText.text = GemScript.FossilInfo;
+        }
+        else
+        {
+            FossilText.text = "No text about the fossil found!";
+        }
+        
     }
 
     GameObject GetRandomPrefab()

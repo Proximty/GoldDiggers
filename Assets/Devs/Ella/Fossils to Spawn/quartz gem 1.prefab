@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5000002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2500001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0feb626c02753834fba728e3904a823a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efe9e5d2a327e1d4ba8e43839416bb84, type: 2}
     - target: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_Name
       value: quartz gem 1
@@ -115,7 +119,6 @@ MonoBehaviour:
     diep in de aarde, vormend over miljoenen jaren terwijl hitte en druk hun werk
     deden. Deze helder glanzende stenen worden meestal in bergen of rivierbeddingen
     gevonden. Wat voert jou hierheen, sprankelende vriend?
-  Animator: {fileID: 0}
 --- !u!65 &7128108409663518970
 BoxCollider:
   m_ObjectHideFlags: 0

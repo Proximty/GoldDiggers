@@ -1,9 +1,8 @@
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public interface IBrushable
 {
-    public void Brush();
+    public void Brush(int Plevel);
 }
 public class dirt : MonoBehaviour, IBrushable
 {
@@ -23,10 +22,13 @@ public class dirt : MonoBehaviour, IBrushable
         _timer += Time.deltaTime;
     }
     //functie voor het schoonmaken/brushen van stenen
-    public void Brush()
+    public void Brush(int Plevel)
     {
+        
+        int stagesToProcess = Mathf.Clamp(Plevel / 2, 1, 3);
         //kijk of de brush actief is of de brush anim al afgespeeld is
-        if (BrushActive == true && _timer > 0.5f)
+        //for (int stage = 1; stage <= stagesToProcess; stage++)
+        if (BrushActive != false)//&& _timer > 0.5f
         {
             //check of dit object aanstaat
             if (this.gameObject.activeSelf == true)
@@ -51,14 +53,13 @@ public class dirt : MonoBehaviour, IBrushable
                 }
 
             }
+
             //speel brush anim af
             Instantiate(_brushPrefab);
             _timer = 0f;
         }
-
-
+        }
         
-    }
     //fucntie voor het activeren/deactiveren van de brush
     public void BrushAwake(bool awake)
     {

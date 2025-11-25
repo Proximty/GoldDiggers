@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 926235721105f4b46b1f5e51c69ad4b8, type: 2}
     - target: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
       propertyPath: m_Name
       value: pirite 1
@@ -102,8 +106,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7969682, y: 0.5927388, z: 0.57710874}
-  m_Center: {x: 0.030763403, y: 0.2595257, z: -0.01942414}
+  m_Size: {x: 0.43171844, y: 0.34370595, z: 0.57710874}
+  m_Center: {x: 0.009022395, y: 0.04409218, z: -0.01942414}
 --- !u!114 &340740058007926188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +124,6 @@ MonoBehaviour:
     mineraal dat al miljoenen jaren geleden diep onder de grond werd gevormd. Deze
     opvallend heldere kubusjes worden meestal in gesteentelagen of oude mijngebieden
     gevonden. Hoe ben jij hier terechtgekomen, blinkende vriend?
-  Animator: {fileID: 0}
 --- !u!114 &7018706027650891652
 MonoBehaviour:
   m_ObjectHideFlags: 0

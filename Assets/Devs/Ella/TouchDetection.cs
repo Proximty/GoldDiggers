@@ -78,7 +78,8 @@ public class TouchDetection : MonoBehaviour
             }
             else if (brushable != null)
             {
-                brushable.Brush();
+                
+                brushable.Brush(1);
             }
             else if (pickup !=null) 
             {

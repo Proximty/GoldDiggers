@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5000002
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2500001
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,9 +60,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0feb626c02753834fba728e3904a823a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efe9e5d2a327e1d4ba8e43839416bb84, type: 2}
     - target: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_Name
       value: quartz gem 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
+      propertyPath: m_TagString
+      value: quarz
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77,9 +85,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7128108409663518970}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1480028612609806623}
   m_SourcePrefab: {fileID: 100100000, guid: 0feb626c02753834fba728e3904a823a, type: 3}
 --- !u!1 &1129711446953838252 stripped
 GameObject:
@@ -115,7 +120,6 @@ MonoBehaviour:
     diep in de aarde, vormend over miljoenen jaren terwijl hitte en druk hun werk
     deden. Deze helder glanzende stenen worden meestal in bergen of rivierbeddingen
     gevonden. Wat voert jou hierheen, sprankelende vriend?
-  Animator: {fileID: 0}
 --- !u!65 &7128108409663518970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135,27 +139,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.5355964, y: 8.350471, z: 4.203025}
-  m_Center: {x: 0.10828447, y: 1.2443253, z: 0.08724558}
---- !u!95 &1480028612609806623
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129711446953838252}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae6ddfd45df38e643906da509f1f0698, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Size: {x: 597.4449, y: 500, z: 900.6955}
+  m_Center: {x: 3.3048868, y: 1.2443304, z: -87.89883}

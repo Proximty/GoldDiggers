@@ -34,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
       propertyPath: m_LocalRotation.y
@@ -64,13 +64,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammonite 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
+      propertyPath: m_TagString
+      value: ammoniet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 3739828567677368197}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 344758220686079401}
@@ -86,28 +87,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
   m_PrefabInstance: {fileID: 3076300412931496955}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &3739828567677368197
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2769818485678040746}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4315237481d7b5946bc70dcd9167b016, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &344758220686079401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -157,4 +136,3 @@ MonoBehaviour:
   FossilInfo: Je hebt een Ammoniet fossiel gevonden! Dit is een uitgestorven inktvis
     soort van wel miljoenen jaren geleden. Deze mooi bewaarde dieren worden meestal
     bij het strand gevonden. Hoe ben jij hier beland, maatje?
-  Animator: {fileID: 3739828567677368197}

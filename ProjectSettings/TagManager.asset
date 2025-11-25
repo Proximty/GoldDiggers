@@ -8,6 +8,7 @@ TagManager:
   - dirt
   - brush
   - ammoniet
+  - quarz
   layers:
   - Default
   - TransparentFX

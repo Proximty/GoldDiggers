@@ -19,21 +19,21 @@ public class level : MonoBehaviour
  
     public void Stones()
     {
-        if (_spawnGem.Animator.GetBool("Rotation") == true)
-        {
+        //if (_spawnGem.Animator.GetBool("Rotation") == true)
+        //{
             if (_Allminerals == true)
             {
                 _UINextLevel.SetActive(true);
             }
-        }
+        //}
     }
     /// <summary>
     /// this makes the scene changes
     /// </summary>
-    public void NextScene()
-    {
-        SceneManager.LoadScene("");
-    }
+    //public void NextScene()
+    //{
+    //    SceneManager.LoadScene("Level Selector");
+    //}
 }
 
 

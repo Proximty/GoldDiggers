@@ -30,7 +30,6 @@ public class dirt : MonoBehaviour, IBrushable
         //for (int stage = 1; stage <= stagesToProcess; stage++)
         if (BrushActive != false)//&& _timer > 0.5f
         {
-            Debug.Log("BRush is " + BrushActive);
             //check of dit object aanstaat
             if (this.gameObject.activeSelf == true)
             {

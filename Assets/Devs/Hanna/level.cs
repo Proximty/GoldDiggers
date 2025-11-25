@@ -30,10 +30,10 @@ public class level : MonoBehaviour
     /// <summary>
     /// this makes the scene changes
     /// </summary>
-    public void NextScene()
-    {
-        SceneManager.LoadScene("2");
-    }
+    //public void NextScene()
+    //{
+    //    SceneManager.LoadScene("Level Selector");
+    //}
 }
 
 

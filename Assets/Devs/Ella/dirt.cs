@@ -24,38 +24,41 @@ public class dirt : MonoBehaviour, IBrushable
     //functie voor het schoonmaken/brushen van stenen
     public void Brush(int Plevel)
     {
+        
         int stagesToProcess = Mathf.Clamp(Plevel / 2, 1, 3);
         //kijk of de brush actief is of de brush anim al afgespeeld is
-        for (int stage = 1; stage <= stagesToProcess; stage++)
-            if (BrushActive == true && _timer > 0.5f)
+        //for (int stage = 1; stage <= stagesToProcess; stage++)
+        if (BrushActive != false)//&& _timer > 0.5f
+        {
+            Debug.Log("BRush is " + BrushActive);
+            //check of dit object aanstaat
+            if (this.gameObject.activeSelf == true)
             {
-                //check of dit object aanstaat
-                if (this.gameObject.activeSelf == true)
+                //afhankelijk van de stage van de dirt, maak de dirt kleiner
+                switch (_stageDirt)
                 {
-                    //afhankelijk van de stage van de dirt, maak de dirt kleiner
-                    switch (_stageDirt)
-                    {
-                        case 1:
-                            SetTransfromOfDirt(0.6f);
-                            _stageDirt++;
-                            break;
-                        case 2:
-                            SetTransfromOfDirt(0.3f);
-                            _stageDirt++;
-                            break;
-                        case 3:
-                            Debug.Log("U removed the dirt from the rock");
-                            _gem.SetActive(true);
-                            _stoneInfo.SetActive(true);
-                            Destroy(this.gameObject);
-                            break;
-                    }
-
+                    case 1:
+                        SetTransfromOfDirt(0.6f);
+                        _stageDirt++;
+                        break;
+                    case 2:
+                        SetTransfromOfDirt(0.3f);
+                        _stageDirt++;
+                        break;
+                    case 3:
+                        Debug.Log("U removed the dirt from the rock");
+                        _gem.SetActive(true);
+                        _stoneInfo.SetActive(true);
+                        Destroy(this.gameObject);
+                        break;
                 }
+
             }
+
             //speel brush anim af
             Instantiate(_brushPrefab);
             _timer = 0f;
+        }
         }
         
     //fucntie voor het activeren/deactiveren van de brush

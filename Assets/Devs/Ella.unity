@@ -208,6 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 69989016}
   - component: {fileID: 69989015}
+  - component: {fileID: 69989017}
   m_Layer: 0
   m_Name: LevelManger
   m_TagString: Untagged
@@ -245,6 +246,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69989017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69989014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7f32560fa47f469d4f971093b45c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scenename: Level Selector
 --- !u!1 &141998373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4348370947159540220, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
@@ -1353,7 +1367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1079415408
 Transform:
   m_ObjectHideFlags: 0
@@ -1740,10 +1754,14 @@ PrefabInstance:
     - target: {fileID: 7779059703032709098, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 69989015}
+      objectReference: {fileID: 69989017}
     - target: {fileID: 7779059703032709098, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextScene
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779059703032709098, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GoToScene, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

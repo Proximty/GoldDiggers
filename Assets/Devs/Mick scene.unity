@@ -163,26 +163,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675589314186a994e9c76d6f8de54cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab1: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
-  Prefab2: {fileID: 919132149155446097, guid: e0ba10230b6648e49b097daa90c066b2, type: 3}
-  Prefab3: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
-  Prefab4: {fileID: 0}
-  Prefab5: {fileID: 0}
-  Prefab6: {fileID: 0}
-  Prefab7: {fileID: 0}
-  Prefab8: {fileID: 0}
-  Prefab9: {fileID: 0}
-  Prefab10: {fileID: 0}
-  Chance1: 0
-  Chance2: 1
-  Chance3: 1
-  Chance4: 1
-  Chance5: 1
-  Chance6: 1
-  Chance7: 1
-  Chance8: 1
-  Chance9: 1
-  Chance10: 1
+  prefabs: []
+  chance:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  FossilText: {fileID: 0}
 --- !u!1 &591380089
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &591380090
 CanvasRenderer:
   m_ObjectHideFlags: 0

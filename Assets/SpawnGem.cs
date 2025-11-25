@@ -9,14 +9,15 @@ public class SpawnGem : MonoBehaviour
 
     private void Start()
     {
-        //if (Animator = GameObject.Find("Animator").GetComponent<Animator>())
-        //{
-        //    Animator.GetBool("Rotation");
-        //}
-        //set rotation of object
+        
         if (this.gameObject.tag == "ammoniet")
         {
+            Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(-90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
+        }if(this.gameObject.tag == "quarz")
+        {
+            Debug.Log("rotate it!");
+            this.gameObject.transform.eulerAngles = new Vector3(90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
         }
        
     }

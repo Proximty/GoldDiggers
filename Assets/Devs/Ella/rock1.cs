@@ -21,34 +21,38 @@ public class rock1 : MonoBehaviour, IBreakable
     //functie voor het breken van het steen
     public void Break(int powerLevel)
     {
-        //kijk of de axe actie is en of de animatie al afgespeeld is van de axe doormiddel van timer
-        if (ActiveAxe == true && _timer > 0.3f)
+        int stagesToProcess = Mathf.Clamp(powerLevel / 2, 1, 3);
+        // dit zorgt voor de upgrades van de Axe
+        for (int stage = 1; stage <= stagesToProcess; stage++)
         {
-            //check welke stage het steen is en shrink het afhankelijk daarvan
-            switch (_stageRock)
+            //kijk of de axe actie is en of de animatie al afgespeeld is van de axe doormiddel van timer
+            if (ActiveAxe == true && _timer > 0.3f)
             {
-                case 1:
-                    SetTransfromOfRock(1.6960754f);
-                    _stageRock++;
-                    break;
-                case 2:
-                    SetTransfromOfRock(1.1855062f);
-                    _stageRock++;
-                    break;
-                case 3:
-                    _dirt.SetActive(true);
-                    Destroy(_daROCK);
-                    break;
+                //check welke stage het steen is en shrink het afhankelijk daarvan
+                switch (_stageRock)
+                {
+                    case 1:
+                        SetTransfromOfRock(1.6960754f);
+                        _stageRock++;
+                        break;
+                    case 2:
+                        SetTransfromOfRock(1.1855062f);
+                        _stageRock++;
+                        break;
+                    case 3:
+                        _dirt.SetActive(true);
+                        Destroy(_daROCK);
+                        break;
+                }
+                //verplaats de target van het steen
+                Vector3 _objTransform = this.gameObject.transform.position;
+                this.gameObject.transform.position = new Vector3(_objTransform.x + 0.2f, _objTransform.y + 0.2f, _objTransform.z);
+
+                //activeer de axe anim
+                Instantiate(_axePrefab);
+                _timer = 0f;
             }
-            //verplaats de target van het steen
-            Vector3 _objTransform = this.gameObject.transform.position;
-            this.gameObject.transform.position = new Vector3(_objTransform.x + 0.2f, _objTransform.y + 0.2f, _objTransform.z);
-
-            //activeer de axe anim
-            Instantiate(_axePrefab);
-            _timer = 0f;
         }
-
     }
     //bool voor het avtiveren en deactiveren van de axe
     public void AxeAwake(bool awake)

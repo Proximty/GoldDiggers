@@ -5,6 +5,7 @@ public class gamemanager : MonoBehaviour
 {
     [SerializeField] private level _level;
     public int StoneCount = 0;
+    public int CoinCount;
     private void Update()
     {
         StoneCheck();

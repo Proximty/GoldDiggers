@@ -12,7 +12,7 @@ public class gamemanager : MonoBehaviour
     }
     void StoneCheck()
     {
-        if (StoneCount == 5)
+        if (StoneCount == 1)
         {
             _level._Allminerals = true;
         }

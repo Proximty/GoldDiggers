@@ -7,37 +7,63 @@ public class LevelsDone : MonoBehaviour
     [SerializeField] private GameObject _lvl2LOCKED;
     [SerializeField] private GameObject _lvl3UNLOCKED;
     [SerializeField] private GameObject _lvl3LOCKED;
+    [SerializeField] private GameObject _lvl4UNLOCKED;
+    [SerializeField] private GameObject _lvl4LOCKED;
+    [SerializeField] private GameObject _lvl5UNLOCKED;
+    [SerializeField] private GameObject _lvl5LOCKED;
     
 
     private void Update()
     {
-        //if level done = 0
-        //only show 1
-        //if level done = 1
-        //show 2
-        //if level done = 2
-        //show 3
+        
 
         switch (LevelDoneInt)
         {
             case 0:
-                _lvl2LOCKED.SetActive(true);
-                _lvl2UNLOCKED.SetActive(false);
-                _lvl3LOCKED.SetActive(true);
-                _lvl3UNLOCKED.SetActive(false);
+                lvlLocked(_lvl2LOCKED, _lvl2UNLOCKED);
+                lvlLocked(_lvl3LOCKED, _lvl3UNLOCKED);
+                lvlLocked(_lvl4LOCKED, _lvl4UNLOCKED);
+                lvlLocked(_lvl5LOCKED, _lvl5UNLOCKED);
                 break;
             case 1:
-                _lvl2LOCKED.SetActive(false);
-                _lvl2UNLOCKED.SetActive(true);
-                _lvl3LOCKED.SetActive(true);
-                _lvl3UNLOCKED.SetActive(false);
+                lvlUnlocked(_lvl2LOCKED, _lvl2UNLOCKED);
+                lvlLocked(_lvl3LOCKED, _lvl3UNLOCKED);
+                lvlLocked(_lvl4LOCKED, _lvl4UNLOCKED);
+                lvlLocked(_lvl5LOCKED, _lvl5UNLOCKED);
                 break;
             case 2:
-                _lvl2LOCKED.SetActive(false);
-                _lvl2UNLOCKED.SetActive(true);
-                _lvl3LOCKED.SetActive(false);
-                _lvl3UNLOCKED.SetActive(true);
+                lvlUnlocked(_lvl2LOCKED, _lvl2UNLOCKED);
+                lvlUnlocked(_lvl3LOCKED, _lvl3UNLOCKED);
+                lvlLocked(_lvl4LOCKED, _lvl4UNLOCKED);
+                lvlLocked(_lvl5LOCKED, _lvl5UNLOCKED);
+                break;
+            case 3:
+                lvlUnlocked(_lvl2LOCKED, _lvl2UNLOCKED);
+                lvlUnlocked(_lvl3LOCKED, _lvl3UNLOCKED);
+                lvlUnlocked(_lvl4LOCKED, _lvl4UNLOCKED);
+                lvlLocked(_lvl5LOCKED, _lvl5UNLOCKED);
+                break;
+            case 4:
+                lvlUnlocked(_lvl2LOCKED, _lvl2UNLOCKED);
+                lvlUnlocked(_lvl3LOCKED, _lvl3UNLOCKED);
+                lvlUnlocked(_lvl4LOCKED, _lvl4UNLOCKED);
+                lvlUnlocked(_lvl5LOCKED, _lvl5UNLOCKED);
+
                 break;
         }
     }
+
+
+    private void lvlLocked(GameObject locked, GameObject unlocked)
+    {
+        locked.SetActive(true);
+        unlocked.SetActive(false);
+    }
+
+    private void lvlUnlocked(GameObject locked, GameObject unlocked)
+    {
+        locked.SetActive(false);
+        unlocked.SetActive(true);
+    }
+    
 }

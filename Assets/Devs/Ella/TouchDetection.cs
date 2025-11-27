@@ -71,6 +71,7 @@ public class TouchDetection : MonoBehaviour
             //check of het object dat geraakt heeft gebrushed of gebreaked kan worden
             IBreakable breakable = hitOBJ.GetComponent<IBreakable>();
             IBrushable brushable = hitOBJ.GetComponent<IBrushable>();
+            IGoToRockScene gotorock = hitOBJ.GetComponent<IGoToRockScene>();
             pickup pickup= hitOBJ.GetComponent<pickup>();
             shop Shop = hitOBJ.GetComponent<shop>();
             if ( breakable != null)
@@ -91,6 +92,10 @@ public class TouchDetection : MonoBehaviour
                 Shop.OpenShop();
                 Shop.CloseShop();
                 Shop.pickaxe();
+            }
+            else if (gotorock != null)
+            {
+                gotorock.GoToRockSceneHEHE();
             }
             else
             {

@@ -5,13 +5,14 @@ public class gamemanager : MonoBehaviour
 {
     [SerializeField] private level _level;
     public int StoneCount = 0;
+    public int CoinCount;
     private void Update()
     {
         StoneCheck();
     }
     void StoneCheck()
     {
-        if (StoneCount == 1)
+        if (StoneCount == 5)
         {
             _level._Allminerals = true;
         }

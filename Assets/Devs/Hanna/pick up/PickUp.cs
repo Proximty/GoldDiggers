@@ -1,9 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class pickup : MonoBehaviour
 {
     [SerializeField] private gamemanager _manager;
+    public int value;
 
     private void Start()
     {
@@ -12,6 +14,7 @@ public class pickup : MonoBehaviour
     public void StoneCount() 
     {
         _manager.StoneCount++;
+        CoinManager.instance.AddCoins(value);
         Destroy(gameObject);
     }
 }

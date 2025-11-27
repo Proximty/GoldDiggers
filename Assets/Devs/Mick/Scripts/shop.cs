@@ -5,6 +5,7 @@ public class shop : MonoBehaviour
     public GameObject Canvas;
     public GameObject Button;
     public int pickaxeLevel;
+    rock1 rock1;
 
     public void Start()
     {
@@ -24,6 +25,6 @@ public class shop : MonoBehaviour
     }
     public void pickaxe()
     {
-        pickaxeLevel++;
+      rock1.Break(+1);
     }
 }

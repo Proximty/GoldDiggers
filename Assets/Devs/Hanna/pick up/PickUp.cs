@@ -5,7 +5,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class pickup : MonoBehaviour
 {
     [SerializeField] private gamemanager _manager;
-    public int value = 1;
+    public int value;
 
     private void Start()
     {

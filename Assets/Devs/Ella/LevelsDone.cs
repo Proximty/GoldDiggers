@@ -1,5 +1,9 @@
 using UnityEngine;
-
+/// <summary>
+/// dit script is om te checken welke levels wel en niett gedaan zijn
+/// je past de level
+/// je past de level done int aan afhankelijk van welke levels gedaan zijn
+/// </summary>
 public class LevelsDone : MonoBehaviour
 {
     public int LevelDoneInt = 0;
@@ -16,7 +20,7 @@ public class LevelsDone : MonoBehaviour
     private void Update()
     {
         
-
+        //switch case die levels unlocked afhankelijk van de level done int
         switch (LevelDoneInt)
         {
             case 0:
@@ -53,13 +57,14 @@ public class LevelsDone : MonoBehaviour
         }
     }
 
-
+    //functie om een level te locken
     private void lvlLocked(GameObject locked, GameObject unlocked)
     {
         locked.SetActive(true);
         unlocked.SetActive(false);
     }
 
+    //functie om een level de unlocken
     private void lvlUnlocked(GameObject locked, GameObject unlocked)
     {
         locked.SetActive(false);

@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 743181286}
   - component: {fileID: 743181287}
   m_Layer: 0
-  m_Name: Stage 3 pile
+  m_Name: pile 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,6 +481,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &822039912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822039914}
+  - component: {fileID: 822039913}
+  m_Layer: 0
+  m_Name: RocksLevel1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &822039913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822039912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28efe1853652fb149a8da97d45b29053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &822039914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822039912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.302685, y: 0.23094998, z: 423.9325}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041570986
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +539,7 @@ GameObject:
   - component: {fileID: 1041570988}
   - component: {fileID: 1041570987}
   m_Layer: 0
-  m_Name: Stage 3 pile (3)
+  m_Name: pile 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,7 +660,7 @@ GameObject:
   - component: {fileID: 1078718126}
   - component: {fileID: 1078718125}
   m_Layer: 0
-  m_Name: Stage 3 pile (2)
+  m_Name: pile 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,7 +1068,7 @@ GameObject:
   - component: {fileID: 1659818040}
   - component: {fileID: 1659818039}
   m_Layer: 0
-  m_Name: Stage 3 pile (1)
+  m_Name: pile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1282,7 +1326,7 @@ GameObject:
   - component: {fileID: 2102990038}
   - component: {fileID: 2102990037}
   m_Layer: 0
-  m_Name: Stage 3 pile (4)
+  m_Name: pile 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1397,9 +1441,10 @@ SceneRoots:
   - {fileID: 1606018824}
   - {fileID: 1639680313}
   - {fileID: 144876757}
-  - {fileID: 743181285}
   - {fileID: 1659818043}
   - {fileID: 1041570991}
   - {fileID: 2102990041}
   - {fileID: 1078718129}
+  - {fileID: 743181285}
   - {fileID: 686324043}
+  - {fileID: 822039914}

@@ -72,6 +72,7 @@ public class TouchDetection : MonoBehaviour
             IBreakable breakable = hitOBJ.GetComponent<IBreakable>();
             IBrushable brushable = hitOBJ.GetComponent<IBrushable>();
             pickup pickup= hitOBJ.GetComponent<pickup>();
+            shop Shop = hitOBJ.GetComponent<shop>();
             if ( breakable != null)
             {
                 breakable.Break(1);
@@ -84,6 +85,12 @@ public class TouchDetection : MonoBehaviour
             else if (pickup !=null) 
             {
                 pickup.StoneCount();
+            }
+            else if (Shop != null)
+            {
+                Shop.OpenShop();
+                Shop.CloseShop();
+                Shop.pickaxe();
             }
             else
             {

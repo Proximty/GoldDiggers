@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: efe9e5d2a327e1d4ba8e43839416bb84, type: 2}
+      objectReference: {fileID: 2100000, guid: 225576aa505dfae4085b112de63bf458, type: 2}
     - target: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       propertyPath: m_Name
       value: quartz gem
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _manager: {fileID: 0}
+  value: 0
 --- !u!65 &1533245659556512467
 BoxCollider:
   m_ObjectHideFlags: 0

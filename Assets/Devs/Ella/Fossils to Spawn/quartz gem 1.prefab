@@ -85,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7128108409663518970}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0feb626c02753834fba728e3904a823a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4999064431698224438}
   m_SourcePrefab: {fileID: 100100000, guid: 0feb626c02753834fba728e3904a823a, type: 3}
 --- !u!1 &1129711446953838252 stripped
 GameObject:
@@ -142,3 +145,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 597.4449, y: 500, z: 900.6955}
   m_Center: {x: 3.3048868, y: 1.2443304, z: -87.89883}
+--- !u!114 &4999064431698224438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129711446953838252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa34e0ea45b7f64dac0ac7e7dea4e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.96981126, g: 0.042086042, b: 0.9607851, a: 1}
+  minIntensity: 0
+  maxIntensity: 1.5
+  flickerSpeed: 2
+  emissionStrength: 0.5

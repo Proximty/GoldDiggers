@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26,31 +26,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.568
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -67,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
       propertyPath: m_Name
       value: calsite 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_TagString
+      value: calsite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -134,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: 'Je hebt een **calciet kristal** gevonden! Dit is een helder, vaak
-    melkachtig wit mineraal dat miljoenen jaren geleden diep in de aarde werd gevormd
-    door langzaam neerslaande mineralen uit water. Deze mooi gevormde kristallen
-    worden meestal in grotten, gesteentelagen of oude kalkafzettingen gevonden. **Wat
-    voert jou hierheen, kalme glansdrager?** '
+  FossilInfo: Je hebt een calciet kristal gevonden! Dit is een helder, vaak melkachtig
+    wit mineraal dat miljoenen jaren geleden diep in de aarde werd gevormd door langzaam
+    neerslaande mineralen uit water. Deze mooi gevormde kristallen worden meestal
+    in grotten, gesteentelagen of oude kalkafzettingen gevonden. Wat voert jou hierheen,
+    kalme glansdrager?

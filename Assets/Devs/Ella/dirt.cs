@@ -28,7 +28,7 @@ public class dirt : MonoBehaviour, IBrushable
         int stagesToProcess = Mathf.Clamp(Plevel / 2, 1, 3);
         //kijk of de brush actief is of de brush anim al afgespeeld is
         //for (int stage = 1; stage <= stagesToProcess; stage++)
-        if (BrushActive != false)//&& _timer > 0.5f
+        if (BrushActive != false && _timer > 1f)
         {
             //check of dit object aanstaat
             if (this.gameObject.activeSelf == true)

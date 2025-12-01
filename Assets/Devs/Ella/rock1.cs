@@ -26,7 +26,7 @@ public class rock1 : MonoBehaviour, IBreakable
         for (int stage = 1; stage <= stagesToProcess; stage++)
         {
             //kijk of de axe actie is en of de animatie al afgespeeld is van de axe doormiddel van timer
-            if (ActiveAxe == true && _timer > 0.3f)
+            if (ActiveAxe == true && _timer > 1f)
             {
                 //check welke stage het steen is en shrink het afhankelijk daarvan
                 switch (_stageRock)

@@ -7,9 +7,9 @@ public class Flicker : MonoBehaviour
     public Color glowColor = Color.yellow;
 
     [Header("Flicker Settings")]
-    public float minIntensity = 0.1f;
+    public float minIntensity = 0f;
     public float maxIntensity = 0.5f;
-    public float flickerSpeed = 2f;
+    public float flickerSpeed = 10f;
 
     [Header("Overall Brightness")]
     public float emissionStrength = 0.5f;

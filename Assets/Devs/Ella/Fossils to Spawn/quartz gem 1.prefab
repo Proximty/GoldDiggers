@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowColor: {r: 0.96981126, g: 0.042086042, b: 0.9607851, a: 1}
-  minIntensity: 0.1
-  maxIntensity: 0.5
+  minIntensity: 0
+  maxIntensity: 1.5
   flickerSpeed: 2
-  emissionStrength: 1
+  emissionStrength: 0.5

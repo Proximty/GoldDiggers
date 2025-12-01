@@ -15,9 +15,9 @@ public class pickup : MonoBehaviour
     }
     public void StoneCount() 
     {
+        Destroy(gameObject);
         _manager.StoneCount++;
         CoinManager.instance.AddCoins(value);
-        Destroy(gameObject);
     }
 }
 

@@ -10,6 +10,9 @@ public class Lvl1Manger : MonoBehaviour
     [SerializeField] private GameObject _rock3;
     [SerializeField] private GameObject _rock4;
     [SerializeField] private GameObject _rock5;
+    [SerializeField] private GameObject _rock6;
+    [SerializeField] private GameObject _rock7;
+    [SerializeField] private GameObject _rock8;
 
     [Header("the rest")]
     [SerializeField] private string _sceneName;
@@ -26,7 +29,7 @@ public class Lvl1Manger : MonoBehaviour
         //get the rock gameobejcts
         if (_sceneName == "level 1")
         {
-            for (int i = 0; i < 4; i++) 
+            for (int i = 0; i < 7; i++) 
             {
                 //get the rocks
                 

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SplashScreen.unity
     guid: fc45c2c933aa355448c99c460c08aea8
   - enabled: 1
-    path: Assets/Devs/Ella.unity
+    path: Assets/Scenes/Ella.unity
     guid: 6f647e828fc541f4cafb35102dc4a3ae
   - enabled: 1
     path: Assets/Scenes/Credits.unity

@@ -19,6 +19,12 @@ public class SpawnGem : MonoBehaviour
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
         }
+        if(this.gameObject.tag == "mosasaurus")
+        {
+            Debug.Log("rotate it!");
+            this.gameObject.transform.eulerAngles = new Vector3(-90f, 90, this.gameObject.transform.eulerAngles.z);
+
+        }
        
     }
 }

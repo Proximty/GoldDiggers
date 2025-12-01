@@ -44,6 +44,13 @@ public class SpawnGem : MonoBehaviour
             this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x, -90, this.gameObject.transform.eulerAngles.z);
             this.gameObject.transform.position = new Vector3(0.68f, 0.48f, -1.18f);
         }
-       
+        if(this.gameObject.tag == "tand")
+        {
+            Debug.Log("rotate it!");
+            this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x, 90, this.gameObject.transform.eulerAngles.z);
+            this.gameObject.transform.position = new Vector3(0.28f, 0.43f, 0f);
+        }
     }
+       
 }
+

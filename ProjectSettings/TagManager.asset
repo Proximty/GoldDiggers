@@ -13,6 +13,7 @@ TagManager:
   - plesiosaurus
   - calsite
   - sphalerite
+  - tand
   layers:
   - Default
   - TransparentFX

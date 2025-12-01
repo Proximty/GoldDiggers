@@ -506,7 +506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &439376601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,8 +835,8 @@ MonoBehaviour:
   - {fileID: 8237043057894547607, guid: ebda13afded5123408ec3ab682340dd1, type: 3}
   - {fileID: 1129711446953838252, guid: 046e3700a3bc29a409e330098c1d6536, type: 3}
   - {fileID: 5607098739788799351, guid: 98352ef10d0ccf44691f8afc402f8261, type: 3}
-  - {fileID: 2769818485678040746, guid: 8e8ca283dde5f174e8e6947f351707bf, type: 3}
-  - {fileID: 4611421649996844530, guid: 463d5184cae678f4a93576b84b6c4f80, type: 3}
+  - {fileID: 2847998359713969, guid: 2b976b6f1ce78564d9703a4a63e5f436, type: 3}
+  - {fileID: 2847998359713969, guid: 2b976b6f1ce78564d9703a4a63e5f436, type: 3}
   - {fileID: 6180964570276367134, guid: b705b6f43ac89be4c969ff694c98d539, type: 3}
   - {fileID: 5607098739788799351, guid: 98352ef10d0ccf44691f8afc402f8261, type: 3}
   chance:

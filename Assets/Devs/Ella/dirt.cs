@@ -17,6 +17,11 @@ public class dirt : MonoBehaviour, IBrushable
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _brushPrefab;
 
+    [Header("dirt")]
+    [SerializeField] private GameObject _dirt3;
+    [SerializeField] private GameObject _dirt2;
+    [SerializeField] private GameObject _dirt1;
+
     private void Update()
     {
         _timer += Time.deltaTime;
@@ -37,12 +42,16 @@ public class dirt : MonoBehaviour, IBrushable
                 switch (_stageDirt)
                 {
                     case 1:
-                        SetTransfromOfDirt(0.6f);
+                        
+                        _dirt3.SetActive(false);
+                        _dirt2.SetActive(true);
                         _stageDirt++;
                         break;
                     case 2:
-                        SetTransfromOfDirt(0.3f);
+                        _dirt2.SetActive(false);
+                        _dirt1.SetActive(true);
                         _stageDirt++;
+                        
                         break;
                     case 3:
                         Debug.Log("U removed the dirt from the rock");
@@ -66,11 +75,11 @@ public class dirt : MonoBehaviour, IBrushable
         BrushActive = awake;
     }
     //deze functie bepaalt de groote van de dirt
-    private void SetTransfromOfDirt(float size)
-    {
-        this.gameObject.transform.localScale = new Vector3(size, size, size);
+    //private void SetTransfromOfDirt(float size)
+    //{
+    //    this.gameObject.transform.localScale = new Vector3(size, size, size);
 
-    }
+    //}
 
     
 

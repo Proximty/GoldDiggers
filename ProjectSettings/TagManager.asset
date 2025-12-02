@@ -11,6 +11,9 @@ TagManager:
   - quarz
   - mosasaurus
   - plesiosaurus
+  - calsite
+  - sphalerite
+  - tand
   layers:
   - Default
   - TransparentFX

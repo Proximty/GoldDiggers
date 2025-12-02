@@ -6,9 +6,11 @@ public interface IGoToRockScene
 }
 
 
+
 public class GoToRockScene : MonoBehaviour, IGoToRockScene
 {
+    [SerializeField] private string SceneName;
    public void GoToRockSceneHEHE() {
-        SceneManager.LoadScene("Ella");
+        SceneManager.LoadScene(SceneName);
     }
 }

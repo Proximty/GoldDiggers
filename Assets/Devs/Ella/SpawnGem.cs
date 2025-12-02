@@ -23,7 +23,7 @@ public class SpawnGem : MonoBehaviour
         {
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(-90f, 90, this.gameObject.transform.eulerAngles.z);
-            this.gameObject.transform.position = new Vector3(0.67f, 0.1f, -0.1600001f);
+            this.gameObject.transform.position = new Vector3(0.67f, -0.13f, -0.1600001f);
 
         }
         if(this.gameObject.tag == "plesiosaurus")
@@ -36,7 +36,7 @@ public class SpawnGem : MonoBehaviour
         {
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
-            this.gameObject.transform.position = new Vector3(0.2075356f , -0.568f, -0.64f);
+            this.gameObject.transform.position = new Vector3(0.73f, -0.568f, -0.64f);
         }
         if(this.gameObject.tag == "sphalerite")
         {

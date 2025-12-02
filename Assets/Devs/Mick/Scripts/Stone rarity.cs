@@ -9,7 +9,7 @@ public class Stonerarity : MonoBehaviour
     [SerializeField] private List<GameObject> prefabs = new List<GameObject>();
     
     [Header("Spawn Chances (groter is makkelijker te krijgen)")]
-    [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+    [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
     [SerializeField] TextMeshProUGUI FossilText;
     
 

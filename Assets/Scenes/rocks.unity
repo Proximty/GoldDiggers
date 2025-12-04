@@ -564,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06050cf2f34899b4683d665a4c0d342b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1026,6 +1026,8 @@ MonoBehaviour:
   - 1
   - 1
   FossilText: {fileID: 503326007}
+  SelectedPrefab: {fileID: 0}
+  PickUpScirpt: {fileID: 0}
 --- !u!1 &743293152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1079415408
 Transform:
   m_ObjectHideFlags: 0
@@ -1714,6 +1716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gem: {fileID: 625772150}
+  _stonteScipt: {fileID: 625772153}
   _stoneInfo: {fileID: 439376600}
   _stageDirt: 1
   BrushActive: 0

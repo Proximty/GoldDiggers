@@ -11,6 +11,7 @@ public class dirt : MonoBehaviour, IBrushable
     /// het speelt ook de bruh anim af nadat er geklikt is op de dirt
     /// </summary>
     [SerializeField] private GameObject _gem;
+    [SerializeField] private Stonerarity _stonteScipt;
     [SerializeField] private GameObject _stoneInfo;
     [SerializeField] private int _stageDirt = 1;
     [SerializeField] public bool BrushActive = false;
@@ -55,7 +56,7 @@ public class dirt : MonoBehaviour, IBrushable
                         break;
                     case 3:
                         Debug.Log("U removed the dirt from the rock");
-                        _gem.SetActive(true);
+                        //_gem.SetActive(true);
                         _stoneInfo.SetActive(true);
                         Destroy(this.gameObject);
                         break;

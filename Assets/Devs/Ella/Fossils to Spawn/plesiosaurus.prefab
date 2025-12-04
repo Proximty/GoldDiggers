@@ -144,7 +144,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 0.80883527, z: 3.2655053}
   m_Center: {x: -3.716916e-16, y: 0.26234317, z: 0.4738444}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8237043057894547607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
@@ -179,3 +179,6 @@ MonoBehaviour:
     de oerzee\xEBn gleed. De resten van deze sierlijke zwemmer worden meestal gevonden
     in oude zeebodems die nu als rotslagen zichtbaar zijn. Hoe ben jij hier terechtgekomen,
     slanke zeereiziger?"
+  _pickUpScipt: {fileID: 5113336408593099118}
+  dirt: {fileID: 0}
+  coll: {fileID: 7355509599479813818}

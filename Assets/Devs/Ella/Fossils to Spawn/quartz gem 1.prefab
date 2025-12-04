@@ -101,7 +101,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129711446953838252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
@@ -124,6 +124,9 @@ MonoBehaviour:
     diep in de aarde, vormend over miljoenen jaren terwijl hitte en druk hun werk
     deden. Deze helder glanzende stenen worden meestal in bergen of rivierbeddingen
     gevonden. Wat voert jou hierheen, sprankelende vriend?
+  _pickUpScipt: {fileID: 5762663078087474113}
+  dirt: {fileID: 0}
+  coll: {fileID: 7128108409663518970}
 --- !u!65 &7128108409663518970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -141,7 +144,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 597.4449, y: 500, z: 900.6955}
   m_Center: {x: 3.3048868, y: 1.2443304, z: -87.89883}

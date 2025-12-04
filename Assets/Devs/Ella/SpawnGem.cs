@@ -6,6 +6,9 @@ public class SpawnGem : MonoBehaviour
     //find the tmp and set the text to the string
     public string FossilInfo;
     //public Animator Animator;
+    [SerializeField] private pickup _pickUpScipt;
+    [SerializeField] private GameObject dirt;
+    [SerializeField] private BoxCollider coll;
 
     private void Start()
     {
@@ -56,7 +59,16 @@ public class SpawnGem : MonoBehaviour
         {
             this.gameObject.transform.position = new Vector3(0.55f, 0.15f, -0.16f);
         }
+        dirt = GameObject.Find("dirt");
     }
-       
+    private void Update()
+    {
+        if(dirt == null)
+        {
+            _pickUpScipt.enabled = true;
+            coll.enabled = true;
+        }
+    }
+
 }
 

@@ -83,7 +83,7 @@ public class TouchDetection : MonoBehaviour
                 
                 brushable.Brush(1);
             }
-            else if (pickup !=null) 
+            else if (pickup !=null && pickup.isActiveAndEnabled) 
             {
                 pickup.StoneCount();
             }

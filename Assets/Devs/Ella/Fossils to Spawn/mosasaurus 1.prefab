@@ -108,7 +108,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.012520294, y: 0.041742604, z: 0.017844731}
   m_Center: {x: 0.000041453863, y: -0.0021006807, z: 0.0049381102}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4579603326731462685}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
@@ -142,3 +142,6 @@ MonoBehaviour:
     dat miljoenen jaren geleden door de oerzee\xEBn zwom. De resten van deze machtige
     jager worden meestal gevonden in oude zeebodems die nu droog land zijn. Hoe ben
     jij hier terechtgekomen, vriend? "
+  _pickUpScipt: {fileID: 2913184075331656529}
+  dirt: {fileID: 0}
+  coll: {fileID: 1572815419394949891}

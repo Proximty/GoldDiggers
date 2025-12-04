@@ -1027,7 +1027,6 @@ MonoBehaviour:
   - 1
   FossilText: {fileID: 503326007}
   SelectedPrefab: {fileID: 0}
-  PickUpScirpt: {fileID: 0}
 --- !u!1 &743293152
 GameObject:
   m_ObjectHideFlags: 0

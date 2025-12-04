@@ -481,59 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &822039912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 822039914}
-  - component: {fileID: 822039913}
-  m_Layer: 0
-  m_Name: RocksLevel1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &822039913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822039912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28efe1853652fb149a8da97d45b29053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rock1: {fileID: 0}
-  _rock2: {fileID: 0}
-  _rock3: {fileID: 0}
-  _rock4: {fileID: 0}
-  _rock5: {fileID: 0}
-  _rock6: {fileID: 0}
-  _rock7: {fileID: 0}
-  _rock8: {fileID: 0}
-  _sceneName: 
---- !u!4 &822039914
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822039912}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.302685, y: 0.23094998, z: 423.9325}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  SceneName: fossils
 --- !u!1 &1041570986
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &1041570988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -687,6 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &1078718126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -876,6 +826,7 @@ GameObject:
   - component: {fileID: 1396172513}
   - component: {fileID: 1396172512}
   - component: {fileID: 1396172515}
+  - component: {fileID: 1396172516}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -958,6 +909,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1396172516}
+        m_TargetAssemblyTypeName: GetRidOfRockManger, Assembly-CSharp
+        m_MethodName: DelelteRockMangerScript
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1396172513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +971,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e7f32560fa47f469d4f971093b45c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenename: Level Selector
+  _scenename: SplashScreen
+--- !u!114 &1396172516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396172510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970e5f7764950f4459bb5055c800dd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RockManager: {fileID: 0}
 --- !u!1 &1606018822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &1659818040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1601,6 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: fossils
 --- !u!65 &1812102924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1722,6 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &1902880612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1843,6 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &2065612013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1964,6 +1944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93efb311de4504f8432cdee6f9368e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: rocks
 --- !u!65 &2102990038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2070,5 +2051,4 @@ SceneRoots:
   - {fileID: 1812102927}
   - {fileID: 1902880615}
   - {fileID: 686324043}
-  - {fileID: 822039914}
   - {fileID: 1810811611}

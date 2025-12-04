@@ -18,6 +18,8 @@ public class SpawnGem : MonoBehaviour
         {
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(90f, this.gameObject.transform.eulerAngles.y, this.gameObject.transform.eulerAngles.z);
+            this.gameObject.transform.position = new Vector3(0.67f, 0.45f, -0.16f);
+
         }
         if(this.gameObject.tag == "mosasaurus")
         {
@@ -42,13 +44,17 @@ public class SpawnGem : MonoBehaviour
         {
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x, -90, this.gameObject.transform.eulerAngles.z);
-            this.gameObject.transform.position = new Vector3(0.68f, 0.48f, -1.18f);
+            this.gameObject.transform.position = new Vector3(0.68f, 0.1f, -1.18f);
         }
         if(this.gameObject.tag == "tand")
         {
             Debug.Log("rotate it!");
             this.gameObject.transform.eulerAngles = new Vector3(this.gameObject.transform.eulerAngles.x, 90, this.gameObject.transform.eulerAngles.z);
-            this.gameObject.transform.position = new Vector3(0.28f, 0.43f, 0f);
+            this.gameObject.transform.position = new Vector3(0.89f, 0.43f, 0f);
+        }
+        if(this.gameObject.tag == "prite")
+        {
+            this.gameObject.transform.position = new Vector3(0.55f, 0.15f, -0.16f);
         }
     }
        

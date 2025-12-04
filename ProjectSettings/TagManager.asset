@@ -14,6 +14,7 @@ TagManager:
   - calsite
   - sphalerite
   - tand
+  - prite
   layers:
   - Default
   - TransparentFX

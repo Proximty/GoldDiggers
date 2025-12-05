@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/level 5.unity
     guid: 9a027349883e35a48831bd208b4a5845
+  - enabled: 1
+    path: Assets/Devs/Mick scene.unity
+    guid: c4e82b276d17b7e4fbca0a28799b386d
+  - enabled: 1
+    path: Assets/Scenes/catalogus.unity
+    guid: 76488720252224b48b61b17ebcc7b62b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

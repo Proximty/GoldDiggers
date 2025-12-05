@@ -75,6 +75,7 @@ public class TouchDetection : MonoBehaviour
             IBrushable brushable = hitOBJ.GetComponent<IBrushable>();
             IGoToRockScene gotorock = hitOBJ.GetComponent<IGoToRockScene>();
             pickup pickup= hitOBJ.GetComponent<pickup>();
+
             shop Shop = hitOBJ.GetComponent<shop>();
             if ( breakable != null)
             {
@@ -102,27 +103,35 @@ public class TouchDetection : MonoBehaviour
                 {
                     case "pile 1":
                         _rockScriptManager.DeleteRock1 = true;
+                        _rockScriptManager.StoneChosen = "pile 1";
                         break;
                     case "pile 2":
                         _rockScriptManager.DeleteRock2 = true;
+                        _rockScriptManager.StoneChosen = "pile 2";
                         break;
                     case "pile 3":
                         _rockScriptManager.DeleteRock3 = true;
+                        _rockScriptManager.StoneChosen = "pile 3";
                         break;
                     case "pile 4":
                         _rockScriptManager.DeleteRock4 = true;
+                        _rockScriptManager.StoneChosen = "pile 4";
                         break;
                     case "pile 5":
                         _rockScriptManager.DeleteRock5 = true;
+                        _rockScriptManager.StoneChosen = "pile 5";
                         break;
                     case "pile 6":
                         _rockScriptManager.DeleteRock6 = true;
+                        _rockScriptManager.StoneChosen = "pile 6";
                         break;
                     case "pile 7":
                         _rockScriptManager.DeleteRock7 = true;
+                        _rockScriptManager.StoneChosen = "pile 7";
                         break;
                     case "pile 8":
                         _rockScriptManager.DeleteRock8 = true;
+                        _rockScriptManager.StoneChosen = "pile 8";
                         break;
 
                 }

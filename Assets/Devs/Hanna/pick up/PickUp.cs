@@ -6,17 +6,18 @@ public class pickup : MonoBehaviour
 {
     [SerializeField] private gamemanager _manager;
     public int value;
+   
 
     private void Start()
     {
         _manager = GameObject.Find("GameManager").GetComponent<gamemanager>();
+      
     }
     public void StoneCount() 
     {
+        Destroy(gameObject);
         _manager.StoneCount++;
         CoinManager.instance.AddCoins(value);
-        Destroy(gameObject);
     }
 }
-
 

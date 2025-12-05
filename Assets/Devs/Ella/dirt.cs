@@ -11,11 +11,17 @@ public class dirt : MonoBehaviour, IBrushable
     /// het speelt ook de bruh anim af nadat er geklikt is op de dirt
     /// </summary>
     [SerializeField] private GameObject _gem;
+    [SerializeField] private Stonerarity _stonteScipt;
     [SerializeField] private GameObject _stoneInfo;
     [SerializeField] private int _stageDirt = 1;
     [SerializeField] public bool BrushActive = false;
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _brushPrefab;
+
+    [Header("dirt")]
+    [SerializeField] private GameObject _dirt3;
+    [SerializeField] private GameObject _dirt2;
+    [SerializeField] private GameObject _dirt1;
 
     private void Update()
     {
@@ -28,7 +34,7 @@ public class dirt : MonoBehaviour, IBrushable
         int stagesToProcess = Mathf.Clamp(Plevel / 2, 1, 3);
         //kijk of de brush actief is of de brush anim al afgespeeld is
         //for (int stage = 1; stage <= stagesToProcess; stage++)
-        if (BrushActive != false)//&& _timer > 0.5f
+        if (BrushActive != false && _timer > 1f)
         {
             //check of dit object aanstaat
             if (this.gameObject.activeSelf == true)
@@ -37,16 +43,20 @@ public class dirt : MonoBehaviour, IBrushable
                 switch (_stageDirt)
                 {
                     case 1:
-                        SetTransfromOfDirt(0.6f);
+                        
+                        _dirt3.SetActive(false);
+                        _dirt2.SetActive(true);
                         _stageDirt++;
                         break;
                     case 2:
-                        SetTransfromOfDirt(0.3f);
+                        _dirt2.SetActive(false);
+                        _dirt1.SetActive(true);
                         _stageDirt++;
+                        
                         break;
                     case 3:
                         Debug.Log("U removed the dirt from the rock");
-                        _gem.SetActive(true);
+                        //_gem.SetActive(true);
                         _stoneInfo.SetActive(true);
                         Destroy(this.gameObject);
                         break;
@@ -66,11 +76,11 @@ public class dirt : MonoBehaviour, IBrushable
         BrushActive = awake;
     }
     //deze functie bepaalt de groote van de dirt
-    private void SetTransfromOfDirt(float size)
-    {
-        this.gameObject.transform.localScale = new Vector3(size, size, size);
+    //private void SetTransfromOfDirt(float size)
+    //{
+    //    this.gameObject.transform.localScale = new Vector3(size, size, size);
 
-    }
+    //}
 
     
 

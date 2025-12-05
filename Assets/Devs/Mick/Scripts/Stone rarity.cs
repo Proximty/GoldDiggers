@@ -9,20 +9,20 @@ public class Stonerarity : MonoBehaviour
     [SerializeField] private List<GameObject> prefabs = new List<GameObject>();
     
     [Header("Spawn Chances (groter is makkelijker te krijgen)")]
-    [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+    [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
     [SerializeField] TextMeshProUGUI FossilText;
-    
+    public GameObject SelectedPrefab;
 
     void Start()
     {
         //it spawns the selected prefab in Start()
-        GameObject selectedPrefab = GetRandomPrefab();
-        if (selectedPrefab != null)
+         SelectedPrefab = GetRandomPrefab();
+        if (SelectedPrefab != null)
         {
-            Instantiate(selectedPrefab, transform.position, transform.rotation);
+            Instantiate(SelectedPrefab, transform.position, transform.rotation);
         }
         //give the tmp the selectedPrefab text
-        SpawnGem GemScript= selectedPrefab.GetComponent<SpawnGem>();
+        SpawnGem GemScript= SelectedPrefab.GetComponent<SpawnGem>();
         if (GemScript != null)
         {
             FossilText.text = GemScript.FossilInfo;

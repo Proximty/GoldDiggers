@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3692501302859182243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.568
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e9e9911991855e5408f1a5285475762b, type: 2}
+    - target: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_Name
+      value: calsite 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      propertyPath: m_TagString
+      value: calsite
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1082235029213229069}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6659644803564997337}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3968123070893979999}
+  m_SourcePrefab: {fileID: 100100000, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+--- !u!1 &4611421649996844530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c882fa8f42fa77f40bdf1557839eb46c, type: 3}
+  m_PrefabInstance: {fileID: 3692501302859182243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1082235029213229069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611421649996844530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 100, y: 100, z: 191.33917}
+  m_Center: {x: 0.02437234, y: 0.7025302, z: -71.42415}
+--- !u!114 &6659644803564997337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611421649996844530}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manager: {fileID: 0}
+  value: 0
+--- !u!114 &3968123070893979999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611421649996844530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FossilInfo: Je hebt een calciet kristal gevonden! Dit is een helder, vaak melkachtig
+    wit mineraal dat miljoenen jaren geleden diep in de aarde werd gevormd door langzaam
+    neerslaande mineralen uit water. Deze mooi gevormde kristallen worden meestal
+    in grotten, gesteentelagen of oude kalkafzettingen gevonden. Wat voert jou hierheen,
+    kalme glansdrager?
+  _pickUpScipt: {fileID: 6659644803564997337}
+  dirt: {fileID: 0}
+  coll: {fileID: 1082235029213229069}

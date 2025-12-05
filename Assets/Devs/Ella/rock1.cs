@@ -9,6 +9,7 @@ public class rock1 : MonoBehaviour, IBreakable
     /// de axe anim wordt hier ook geactiveerd bij het breken van het steen
     /// </summary>
     [SerializeField] private GameObject _dirt;
+    [SerializeField] private GameObject _gem;
     [SerializeField] private int _stageRock = 1;
     [SerializeField] private GameObject _daROCK;
     [SerializeField] public bool ActiveAxe = false;
@@ -26,7 +27,7 @@ public class rock1 : MonoBehaviour, IBreakable
         for (int stage = 1; stage <= stagesToProcess; stage++)
         {
             //kijk of de axe actie is en of de animatie al afgespeeld is van de axe doormiddel van timer
-            if (ActiveAxe == true && _timer > 0.3f)
+            if (ActiveAxe == true && _timer > 1f)
             {
                 //check welke stage het steen is en shrink het afhankelijk daarvan
                 switch (_stageRock)
@@ -41,6 +42,7 @@ public class rock1 : MonoBehaviour, IBreakable
                         break;
                     case 3:
                         _dirt.SetActive(true);
+                        _gem.SetActive(true);
                         Destroy(_daROCK);
                         break;
                 }

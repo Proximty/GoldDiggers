@@ -15,6 +15,7 @@ public class StartAnim : MonoBehaviour
     private Image _spriteIMG;
     [SerializeField]
     private GoToScene _sceneChangerScript;
+    [SerializeField] private float timer;
 
     //haal de img die veranders moet worden inclusief het scene veranderen script
     private void Start()
@@ -22,10 +23,18 @@ public class StartAnim : MonoBehaviour
         _spriteIMG = this.gameObject.GetComponent<Image>();
         _sceneChangerScript = this.gameObject.GetComponent<GoToScene>();
     }
+    private void Update()
+    {
+        timer += Time.deltaTime;
+    }
     public void StartButtonAnim()
     {
         //begin de animatie 
-        StartCoroutine(ButtonAnim());
+        if (timer > 2f)
+        {
+            timer = 0f;
+            StartCoroutine(ButtonAnim());
+        }
     }
     IEnumerator ButtonAnim()
     {

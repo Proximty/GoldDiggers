@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public interface IGoToRockScene
@@ -6,9 +7,12 @@ public interface IGoToRockScene
 }
 
 
+
 public class GoToRockScene : MonoBehaviour, IGoToRockScene
 {
-   public void GoToRockSceneHEHE() {
-        SceneManager.LoadScene("Ella");
+    
+    [SerializeField] private string SceneName;
+    public void GoToRockSceneHEHE() {
+        SceneManager.LoadScene(SceneName);
     }
 }

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3697293837023810892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3719cdb6c496fa5488b1118ef3ddf3bb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_Name
+      value: mosasaurus 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      propertyPath: m_TagString
+      value: mosasaurus
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1572815419394949891}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2913184075331656529}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6680398894470056168}
+  m_SourcePrefab: {fileID: 100100000, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+--- !u!1 &4579603326731462685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5435241a9013dbc4c807f5fe5ce1d569, type: 3}
+  m_PrefabInstance: {fileID: 3697293837023810892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1572815419394949891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579603326731462685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.012520294, y: 0.041742604, z: 0.017844731}
+  m_Center: {x: 0.000041453863, y: -0.0021006807, z: 0.0049381102}
+--- !u!114 &2913184075331656529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579603326731462685}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manager: {fileID: 0}
+  value: 0
+--- !u!114 &6680398894470056168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579603326731462685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FossilInfo: "Je hebt een Mosasaurusfossiel gevonden! Dit is een uitgestorven zeereptiel
+    dat miljoenen jaren geleden door de oerzee\xEBn zwom. De resten van deze machtige
+    jager worden meestal gevonden in oude zeebodems die nu droog land zijn. Hoe ben
+    jij hier terechtgekomen, vriend? "
+  _pickUpScipt: {fileID: 2913184075331656529}
+  dirt: {fileID: 0}
+  coll: {fileID: 1572815419394949891}

@@ -9,6 +9,12 @@ TagManager:
   - brush
   - ammoniet
   - quarz
+  - mosasaurus
+  - plesiosaurus
+  - calsite
+  - sphalerite
+  - tand
+  - prite
   layers:
   - Default
   - TransparentFX

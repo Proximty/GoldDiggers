@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa34e0ea45b7f64dac0ac7e7dea4e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowColor: {r: 0.7132075, g: 0.5953494, b: 0.13860443, a: 1}
+  glowColor: {r: 0.7132075, g: 0.5953494, b: 0.13860443, a: 0.27450982}
   minIntensity: 0
   maxIntensity: 1.5
-  flickerSpeed: 2
+  flickerSpeed: 2.03
   emissionStrength: 0.5

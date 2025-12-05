@@ -39,8 +39,8 @@ public class Flicker : MonoBehaviour
     {
         flicker();
     }
-   private void flicker()
-   {
+    private void flicker()
+    {
         float targetIntensity = Random.Range(minIntensity, maxIntensity);
         currentIntensity = Mathf.Lerp(currentIntensity, targetIntensity, flickerSpeed * Time.deltaTime);
 
@@ -49,10 +49,22 @@ public class Flicker : MonoBehaviour
         // final emissive value
         Color emissive = glowColor * currentIntensity * emissionStrength;
 
+        // Apply color
         mpb.SetColor("_EmissionColor", emissive);
-
         rend.SetPropertyBlock(mpb);
-   }
+
+        // --- CRITICAL PART ---
+        // Disable emission keyword if emissive is zero
+        if (emissive.maxColorComponent <= 0.0001f)
+        {
+            rend.sharedMaterial.DisableKeyword("_EMISSION");
+        }
+        else
+        {
+            rend.sharedMaterial.EnableKeyword("_EMISSION");
+        }
+    }
+
 }
 
 

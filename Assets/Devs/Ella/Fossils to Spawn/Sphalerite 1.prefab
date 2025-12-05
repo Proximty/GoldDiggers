@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f453dbded19982c4ebbebb795ccb48ba, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 706a0a5c5739fb340a13eaadc5eeb10f, type: 2}
+      objectReference: {fileID: 2100000, guid: 79a3f74351c46a340b288ec5c43586a3, type: 2}
     - target: {fileID: 919132149155446097, guid: f453dbded19982c4ebbebb795ccb48ba, type: 3}
       propertyPath: m_Name
       value: Sphalerite 1
@@ -166,6 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowColor: {r: 0.7132075, g: 0.5953494, b: 0.13860443, a: 1}
   minIntensity: 0
-  maxIntensity: 6
+  maxIntensity: 1.5
   flickerSpeed: 2
   emissionStrength: 0.5

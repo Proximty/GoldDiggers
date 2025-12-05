@@ -1002,7 +1002,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 2769818485678040746, guid: 8e8ca283dde5f174e8e6947f351707bf, type: 3}
   - {fileID: 4579603326731462685, guid: 455e449f1f7e19e4e9d7e3c2d3706884, type: 3}
-  - {fileID: 8237043057894547607, guid: ebda13afded5123408ec3ab682340dd1, type: 3}
+  - {fileID: 9092611405408478753, guid: 9d65aab3e1e88214d86698572c8f1d0a, type: 3}
   - {fileID: 2847998359713969, guid: 2b976b6f1ce78564d9703a4a63e5f436, type: 3}
   chance:
   - 1

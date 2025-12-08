@@ -2004,6 +2004,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 67628262433820568, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
+      propertyPath: m_text
+      value: 'next stone
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 442007064870420236, guid: e5483da19e759d347af18c3c9d114a43, type: 3}
       propertyPath: m_RenderMode
       value: 0

@@ -2197,6 +2197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lineRenderer: {fileID: 1561015194}
+  _fossilManager: {fileID: 0}
 --- !u!4 &1561015196
 Transform:
   m_ObjectHideFlags: 0

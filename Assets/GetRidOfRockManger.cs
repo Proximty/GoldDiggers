@@ -6,7 +6,7 @@ public class GetRidOfRockManger : MonoBehaviour
 
     private void Start()
     {
-        RockManager = GameObject.Find("RockManger");
+        RockManager = GameObject.Find("FossilManager");
     }
     public void DelelteRockMangerScript()
     {

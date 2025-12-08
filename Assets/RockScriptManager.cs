@@ -28,20 +28,20 @@ public class RockScriptManager : MonoBehaviour
     [SerializeField] GameObject rock7;
     [SerializeField] GameObject rock8;
 
-    [Header("fossils shit")]
-    [SerializeField] public string pile1;
-    [SerializeField] public string pile2;
-    [SerializeField] public string pile3;
-    [SerializeField] public string pile4;
-    [SerializeField] public string pile5;
-    [SerializeField] public string pile6;
-    [SerializeField] public string pile7;
-    [SerializeField] public string pile8;
+    //[Header("fossils shit")]
+    //[SerializeField] public string pile1;
+    //[SerializeField] public string pile2;
+    //[SerializeField] public string pile3;
+    //[SerializeField] public string pile4;
+    //[SerializeField] public string pile5;
+    //[SerializeField] public string pile6;
+    //[SerializeField] public string pile7;
+    //[SerializeField] public string pile8;
 
-    [Header("srting shit")]
-    [SerializeField] public string StoneChosen;
-    [SerializeField] public string GemFound;
-    [SerializeField] Stonerarity gemScript;
+    //[Header("srting shit")]
+    //[SerializeField] public string StoneChosen;
+    //[SerializeField] public string GemFound;
+    //[SerializeField] Stonerarity gemScript;
 
     private void Awake()
     {
@@ -59,56 +59,56 @@ public class RockScriptManager : MonoBehaviour
                 Debug.Log("You are in scene 1");
                 #region find piles
                 rock1 = GameObject.Find("pile 1");
-                pile1 = rock1.GetComponent<RockInfo>().fossilName;
+                //pile1 = rock1.GetComponent<RockInfo>().fossilName;
                 rock2 = GameObject.Find("pile 2");
-                pile2 = rock2.GetComponent<RockInfo>().fossilName;
+                //pile2 = rock2.GetComponent<RockInfo>().fossilName;
                 rock3 = GameObject.Find("pile 3");
-                pile3 = rock3.GetComponent<RockInfo>().fossilName;
+                //pile3 = rock3.GetComponent<RockInfo>().fossilName;
                 rock4 = GameObject.Find("pile 4");
-                pile4 = rock4.GetComponent<RockInfo>().fossilName;
+                //pile4 = rock4.GetComponent<RockInfo>().fossilName;
                 rock5 = GameObject.Find("pile 5");
-                pile5 = rock5.GetComponent<RockInfo>().fossilName;
+                //pile5 = rock5.GetComponent<RockInfo>().fossilName;
                 rock6 = GameObject.Find("pile 6");
-                pile6 = rock6.GetComponent<RockInfo>().fossilName;
+                //pile6 = rock6.GetComponent<RockInfo>().fossilName;
                 rock7 = GameObject.Find("pile 7");
-                pile7 = rock7.GetComponent<RockInfo>().fossilName;
+                //pile7 = rock7.GetComponent<RockInfo>().fossilName;
                 rock8 = GameObject.Find("pile 8");
-                pile8 = rock8.GetComponent<RockInfo>().fossilName;
+                //pile8 = rock8.GetComponent<RockInfo>().fossilName;
                 #endregion
 
 
-                //spawn fossils at the place
-                GameObject thatrock = GameObject.Find(StoneChosen);
-                RockInfo rockInfo = GameObject.Find(StoneChosen).GetComponent<RockInfo>();
-                rockInfo.fossilName = GemFound;
+                ////spawn fossils at the place
+                //GameObject thatrock = GameObject.Find(StoneChosen);
+                //RockInfo rockInfo = GameObject.Find(StoneChosen).GetComponent<RockInfo>();
+                //rockInfo.fossilName = GemFound;
 
 
-                
+
 
                 //detete chosen rocks
 
-                //CheckIfPileDeleted(rock1, DeleteRock1);
-                //CheckIfPileDeleted(rock2, DeleteRock2);
-                //CheckIfPileDeleted(rock3, DeleteRock3);
-                //CheckIfPileDeleted(rock4 , DeleteRock4);
-                //CheckIfPileDeleted (rock5, DeleteRock5);
-                //CheckIfPileDeleted(rock6, DeleteRock6);
-                //CheckIfPileDeleted(rock7 , DeleteRock7);
-                //CheckIfPileDeleted(rock8 , DeleteRock8);
+                CheckIfPileDeleted(rock1, DeleteRock1);
+                CheckIfPileDeleted(rock2, DeleteRock2);
+                CheckIfPileDeleted(rock3, DeleteRock3);
+                CheckIfPileDeleted(rock4, DeleteRock4);
+                CheckIfPileDeleted(rock5, DeleteRock5);
+                CheckIfPileDeleted(rock6, DeleteRock6);
+                CheckIfPileDeleted(rock7, DeleteRock7);
+                CheckIfPileDeleted(rock8, DeleteRock8);
 
                 break;
 
 
-                case "rocks":
-                //check wich fossil was spawned
-                gemScript = GameObject.Find("gem").GetComponent<Stonerarity>();
-                GemFound = gemScript.SelectedPrefab.tag;
-                    break;
-                case "fossils":
-                //check wich fossil was spawned
-                gemScript = GameObject.Find("gem").GetComponent<Stonerarity>();
-                GemFound = gemScript.SelectedPrefab.tag;
-                break;
+                //case "rocks":
+                ////check wich fossil was spawned
+                //gemScript = GameObject.Find("gem").GetComponent<Stonerarity>();
+                //GemFound = gemScript.SelectedPrefab.tag;
+                //    break;
+                //case "fossils":
+                ////check wich fossil was spawned
+                //gemScript = GameObject.Find("gem").GetComponent<Stonerarity>();
+                //GemFound = gemScript.SelectedPrefab.tag;
+                //break;
 
 
 

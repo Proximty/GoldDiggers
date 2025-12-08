@@ -11,7 +11,8 @@ public class TouchDetection : MonoBehaviour
     /// anders werkt het niet :(
     /// </summary>
     [SerializeField] private LineRenderer _lineRenderer;
-   
+    [SerializeField] private FossilManager _fossilManager;
+
     private void Start()
     {
         // LineRenderer instellingen zodat dit te zien is in de schene view
@@ -19,6 +20,8 @@ public class TouchDetection : MonoBehaviour
         _lineRenderer.endWidth = 0.002f;
         _lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
         _lineRenderer.material.color = Color.red; // Maak de lijn rood
+        _fossilManager = GameObject.Find("FossilManager").GetComponent<FossilManager>();
+        
     }
 
     private void Update()
@@ -96,6 +99,7 @@ public class TouchDetection : MonoBehaviour
             }
             else if (gotorock != null)
             {
+                _fossilManager.NameOfRocks.Add(hitOBJ.name);
                 gotorock.GoToRockSceneHEHE();
             }
             else

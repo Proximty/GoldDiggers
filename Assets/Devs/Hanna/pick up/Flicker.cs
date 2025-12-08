@@ -39,7 +39,7 @@ public class Flicker : MonoBehaviour
     {
         flicker();
     }
-    private void flicker()
+    public void flicker()
     {
         float targetIntensity = Random.Range(minIntensity, maxIntensity);
         currentIntensity = Mathf.Lerp(currentIntensity, targetIntensity, flickerSpeed * Time.deltaTime);

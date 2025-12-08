@@ -31,6 +31,10 @@ public class SpawnGem : MonoBehaviour
             {
                 this.gameObject.transform.position = new Vector3(0.67f, 0.45f, -0.16f);
             }
+            else
+            {
+                this.gameObject.transform.localScale = new Vector3(0.0025f, 0.0025f, 0.0025f);
+            }
 
         }
         if(this.gameObject.tag == "mosasaurus")
@@ -71,6 +75,10 @@ public class SpawnGem : MonoBehaviour
             {
                 this.gameObject.transform.position = new Vector3(0.73f, -0.568f, -0.64f);
             }
+            else
+            {
+                this.gameObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+            }
         }
         if(this.gameObject.tag == "sphalerite")
         {
@@ -84,6 +92,7 @@ public class SpawnGem : MonoBehaviour
             else
             {
                 this.gameObject.transform.eulerAngles = new Vector3(0, -90, 0);
+                this.gameObject.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
             }
         }
         if(this.gameObject.tag == "tand")
@@ -108,6 +117,7 @@ public class SpawnGem : MonoBehaviour
             else
             {
                this.gameObject.transform.eulerAngles = new Vector3(-14.425f, 0, 0);
+                this.gameObject.transform.localScale = new Vector3(4f, 4f, 4f);
             }
         }
         dirt = GameObject.Find("dirt");

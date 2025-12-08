@@ -831,7 +831,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DugUpRocks: []
+  NameOfRocks: []
   FossilPrefabs: []
+  _sceneName: 
+  _fossilAdded: 0
+  _gemObj: {fileID: 0}
+  _gemScipt: {fileID: 0}
+  _rocksFound: 0
 --- !u!4 &1667751116
 Transform:
   m_ObjectHideFlags: 0
@@ -994,7 +1000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9a222a3ec644190438dff2fb3c67d66b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59cba74ee3d3aa244815680dc336d844, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

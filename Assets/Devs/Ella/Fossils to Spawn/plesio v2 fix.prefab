@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plesio v2 fix
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a9fea96fd576a8b46bf93e71baff20f0, type: 3}
+      propertyPath: m_TagString
+      value: plesiosaurus
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121,9 +125,10 @@ MonoBehaviour:
     de oerzee\xEBn gleed. De resten van deze sierlijke zwemmer worden meestal gevonden
     in oude zeebodems die nu als rotslagen zichtbaar zijn. Hoe ben jij hier terechtgekomen,
     slanke zeereiziger?"
-  _pickUpScipt: {fileID: 0}
+  _pickUpScipt: {fileID: 9023895724269540631}
   dirt: {fileID: 0}
-  coll: {fileID: 0}
+  coll: {fileID: 3837171256903572863}
+  _sceneName: 
 --- !u!65 &3837171256903572863
 BoxCollider:
   m_ObjectHideFlags: 0

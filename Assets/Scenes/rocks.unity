@@ -1125,23 +1125,7 @@ MonoBehaviour:
   - {fileID: 6180964570276367134, guid: b705b6f43ac89be4c969ff694c98d539, type: 3}
   - {fileID: 1129711446953838252, guid: 046e3700a3bc29a409e330098c1d6536, type: 3}
   - {fileID: 5607098739788799351, guid: 98352ef10d0ccf44691f8afc402f8261, type: 3}
-  - {fileID: 4611421649996844530, guid: 463d5184cae678f4a93576b84b6c4f80, type: 3}
-  - {fileID: 6180964570276367134, guid: b705b6f43ac89be4c969ff694c98d539, type: 3}
-  - {fileID: 1129711446953838252, guid: 046e3700a3bc29a409e330098c1d6536, type: 3}
-  - {fileID: 5607098739788799351, guid: 98352ef10d0ccf44691f8afc402f8261, type: 3}
-  - {fileID: 4611421649996844530, guid: 463d5184cae678f4a93576b84b6c4f80, type: 3}
-  - {fileID: 6180964570276367134, guid: b705b6f43ac89be4c969ff694c98d539, type: 3}
-  - {fileID: 1129711446953838252, guid: 046e3700a3bc29a409e330098c1d6536, type: 3}
-  - {fileID: 5607098739788799351, guid: 98352ef10d0ccf44691f8afc402f8261, type: 3}
   chance:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
   - 1
   - 1
   - 1
@@ -2471,6 +2455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lineRenderer: {fileID: 1561015194}
+  _fossilManager: {fileID: 0}
 --- !u!4 &1561015196
 Transform:
   m_ObjectHideFlags: 0

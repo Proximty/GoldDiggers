@@ -15,6 +15,7 @@ public class FossilManager : MonoBehaviour
     [SerializeField] private bool _fossilAdded = false;
     [SerializeField] private GameObject _gemObj;
     [SerializeField] private Stonerarity _gemScipt;
+    [SerializeField] private bool _rocksFound = false;
 
     private void Awake()
     {
@@ -39,6 +40,34 @@ public class FossilManager : MonoBehaviour
         else
         {
             _fossilAdded = false;
+        }
+
+        if(_sceneName == "level 1")
+        {
+            
+            //find the dupuprocks though the name
+            if(_rocksFound == false)
+            {
+                
+                foreach (string name in NameOfRocks)
+                {
+                    DugUpRocks.Add(GameObject.Find(name));
+                }
+                _rocksFound = true;
+            }
+            //spawn the rocks in 
+
+            for(int i = 0; i < DugUpRocks.Count; i++)
+            {
+                Instantiate(FossilPrefabs[i], DugUpRocks[i].transform.position, DugUpRocks[i].transform.rotation);
+                Destroy(DugUpRocks[i]);
+            }
+        }
+        else
+        {
+            //clear the list so that it doesnt cause problems in lvl 1
+            DugUpRocks.Clear();
+            _rocksFound= false;
         }
     }
 

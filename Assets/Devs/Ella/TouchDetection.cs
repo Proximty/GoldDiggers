@@ -11,7 +11,8 @@ public class TouchDetection : MonoBehaviour
     /// anders werkt het niet :(
     /// </summary>
     [SerializeField] private LineRenderer _lineRenderer;
-   
+    [SerializeField] private RockScriptManager _rockScriptManager;
+
     private void Start()
     {
         // LineRenderer instellingen zodat dit te zien is in de schene view
@@ -19,6 +20,7 @@ public class TouchDetection : MonoBehaviour
         _lineRenderer.endWidth = 0.002f;
         _lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
         _lineRenderer.material.color = Color.red; // Maak de lijn rood
+        _rockScriptManager = GameObject.Find("RockManger").GetComponent<RockScriptManager>();
     }
 
     private void Update()
@@ -96,6 +98,34 @@ public class TouchDetection : MonoBehaviour
             }
             else if (gotorock != null)
             {
+                switch (hitOBJ.name)
+                {
+                    case "pile 1":
+                        _rockScriptManager.DeleteRock1 = true;
+                        break;
+                    case "pile 2":
+                        _rockScriptManager.DeleteRock2 = true;
+                        break;
+                    case "pile 3":
+                        _rockScriptManager.DeleteRock3 = true;
+                        break;
+                    case "pile 4":
+                        _rockScriptManager.DeleteRock4 = true;
+                        break;
+                    case "pile 5":
+                        _rockScriptManager.DeleteRock5 = true;
+                        break;
+                    case "pile 6":
+                        _rockScriptManager.DeleteRock6 = true;
+                        break;
+                    case "pile 7":
+                        _rockScriptManager.DeleteRock7 = true;
+                        break;
+                    case "pile 8":
+                        _rockScriptManager.DeleteRock8 = true;
+                        break;
+
+                }
                 gotorock.GoToRockSceneHEHE();
             }
             else

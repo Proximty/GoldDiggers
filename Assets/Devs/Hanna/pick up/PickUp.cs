@@ -4,20 +4,23 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class pickup : MonoBehaviour
 {
-    [SerializeField] private gamemanager _manager;
-    public int value;
+    [SerializeField] private gamemanager _Manager;
+    public int Value;
    
 
     private void Start()
     {
-        _manager = GameObject.Find("GameManager").GetComponent<gamemanager>();
+        _Manager = GameObject.Find("GameManager").GetComponent<gamemanager>();
       
     }
+    /// <summary>
+    /// makes sure of value 
+    /// </summary>
     public void StoneCount() 
     {
         Destroy(gameObject);
-        _manager.StoneCount++;
-        CoinManager.instance.AddCoins(value);
+        _Manager.StoneCount++;
+        CoinManager.instance.AddCoins(Value);
     }
 }
 

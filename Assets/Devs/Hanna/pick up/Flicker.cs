@@ -7,61 +7,64 @@ public class Flicker : MonoBehaviour
     public Color glowColor = Color.yellow;
 
     [Header("Flicker Settings")]
-    public float minIntensity = 0f;
-    public float maxIntensity = 1.5f;
-    public float flickerSpeed = 2f;
+    public float MinIntensity = 0f;
+    public float MaxIntensity = 1.5f;
+    public float FlickerSpeed = 2f;
 
     [Header("Overall Brightness")]
-    public float emissionStrength = 0.5f;
+    public float EmissionStrength = 0.5f;
 
-    private Renderer rend;
-    private MaterialPropertyBlock mpb;
-    private float currentIntensity;
+    private Renderer _Rend;
+    private MaterialPropertyBlock _Mpb;
+    private float _CurrentIntensity;
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        mpb = new MaterialPropertyBlock();
+        _Rend = GetComponent<Renderer>();
+        _Mpb = new MaterialPropertyBlock();
 
         // --- CRITICAL ---  
         // Force the shader to ENABLE emission 
-        if (rend.sharedMaterial != null)
+        if (_Rend.sharedMaterial != null)
         {
-            rend.sharedMaterial.EnableKeyword("_EMISSION");
+            _Rend.sharedMaterial.EnableKeyword("_EMISSION");
 
             // For URP Lit shaders, emission MUST be explicitly set once
-            rend.sharedMaterial.SetColor("_EmissionColor", glowColor * 0.01f);
+            _Rend.sharedMaterial.SetColor("_EmissionColor", glowColor * 0.01f);
         }
 
-        currentIntensity = maxIntensity;
+        _CurrentIntensity = MaxIntensity;
     }
     private void Update()
     {
         flicker();
     }
+    /// <summary>
+    /// make the flicker happen and set emission on
+    /// </summary>
     public void flicker()
     {
-        float targetIntensity = Random.Range(minIntensity, maxIntensity);
-        currentIntensity = Mathf.Lerp(currentIntensity, targetIntensity, flickerSpeed * Time.deltaTime);
+        float targetIntensity = Random.Range(MinIntensity, MaxIntensity);
+        _CurrentIntensity = Mathf.Lerp(_CurrentIntensity, targetIntensity, FlickerSpeed * Time.deltaTime);
 
-        rend.GetPropertyBlock(mpb);
+        _Rend.GetPropertyBlock(_Mpb);
 
         // final emissive value
-        Color emissive = glowColor * currentIntensity * emissionStrength;
+        Color emissive = glowColor * _CurrentIntensity * EmissionStrength;
 
         // Apply color
-        mpb.SetColor("_EmissionColor", emissive);
-        rend.SetPropertyBlock(mpb);
+        _Mpb.SetColor("_EmissionColor", emissive);
+        _Rend.SetPropertyBlock(_Mpb);
 
         // --- CRITICAL PART ---
         // Disable emission keyword if emissive is zero
         if (emissive.maxColorComponent <= 0.0001f)
         {
-            rend.sharedMaterial.DisableKeyword("_EMISSION");
+            _Rend.sharedMaterial.DisableKeyword("_EMISSION");
         }
         else
         {
-            rend.sharedMaterial.EnableKeyword("_EMISSION");
+            _Rend.sharedMaterial.EnableKeyword("_EMISSION");
         }
     }
 

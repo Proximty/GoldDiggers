@@ -3,22 +3,27 @@ using UnityEngine.UI;
 
 public class ButtonFadeFlicker : MonoBehaviour
 {
-    public Button targetButton;
-    public float speed = 3f;
+    public Button TargetButton;
+    public float Speed = 3f;
+    private Image _BtnImage;
 
-    private Image btnImage;
-
-    void Start()
+    private void Start()
     {
-        btnImage = targetButton.GetComponent<Image>();
+        _BtnImage = TargetButton.GetComponent<Image>();
     }
-
-    void Update()
+    public void Update()
     {
-        float alpha = (Mathf.Sin(Time.time * speed) + 1f) / 2f; // 0-1 range
-        Color c = btnImage.color;
+        Fade();
+    }
+    /// <summary>
+    /// makes it fade in and out
+    /// </summary>
+    private void Fade()
+    {
+        float alpha = (Mathf.Sin(Time.time * Speed) + 1f) / 2f; // 0-1 range
+        Color c = _BtnImage.color;
         c.a = alpha;
-        btnImage.color = c;
+        _BtnImage.color = c;
     }
 }
 

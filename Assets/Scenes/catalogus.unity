@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentImageIndex: 0
+  Ammonite: {fileID: 919132149155446097, guid: 7b6f0480b53955e43983737cf2d21171, type: 3}
   AmmonietInfo: {fileID: 705048676}
   KwartsInfo: {fileID: 47723054}
   PyrietInfo: {fileID: 170417276}

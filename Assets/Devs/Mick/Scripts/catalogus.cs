@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class catalogus : MonoBehaviour
 {
     public int currentImageIndex = 0;
+    public GameObject Ammonite;
     public GameObject AmmonietInfo;
     public GameObject KwartsInfo;
     public GameObject PyrietInfo;
@@ -41,6 +42,7 @@ public class catalogus : MonoBehaviour
             KwartsInfo.SetActive(false);
             PyrietInfo.SetActive(false);
             SfalerietInfo.SetActive(false);
+            Instantiate(Ammonite);
         }
         else if (currentImageIndex == 1)
         {

@@ -123,8 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  value: 0
+  _Manager: {fileID: 0}
+  Value: 0
 --- !u!114 &3146396824572795164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,10 +139,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FossilInfo: Je hebt een Ammoniet fossiel gevonden! Dit is een uitgestorven inktvis
     soort van wel miljoenen jaren geleden. Deze mooi bewaarde dieren worden meestal
-    bij het strand gevonden. Hoe ben jij hier beland, maatje?
+    bij het strand gevonden! Ik wed dat ze zo schattig waren vroeger.
   _pickUpScipt: {fileID: 5338868320353290047}
   dirt: {fileID: 0}
   coll: {fileID: 344758220686079401}
+  _sceneName: 
 --- !u!114 &6234168057659591404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,5 +159,5 @@ MonoBehaviour:
   glowColor: {r: 1, g: 1, b: 1, a: 0.3529412}
   minIntensity: 0
   maxIntensity: 1.5
-  flickerSpeed: 2
+  fadeSpeed: 2
   emissionStrength: 0.5

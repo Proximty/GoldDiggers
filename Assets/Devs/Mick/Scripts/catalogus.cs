@@ -11,6 +11,8 @@ public class catalogus : MonoBehaviour
     public GameObject KwartsInfo;
     public GameObject PyrietInfo;
     public GameObject SfalerietInfo;
+    public AudioSource clickSound;
+    public AudioSource PageTurning;
 
     public void Start()
     {
@@ -68,6 +70,8 @@ public class catalogus : MonoBehaviour
     }
     public void Next()
     {
+        ClickSound();
+        PageTurnSound();
         currentImageIndex = currentImageIndex + 1;
         Debug.Log("het klik");
         Debug.Log(currentImageIndex);
@@ -75,9 +79,21 @@ public class catalogus : MonoBehaviour
 
     public void Previous()
     {
+        ClickSound();
+        PageTurnSound();
         currentImageIndex = currentImageIndex - 1;
         Debug.Log("het klik");
         Debug.Log(currentImageIndex);
+    }
+
+    public void ClickSound()
+    {
+        clickSound.Play();
+    }
+
+    public void PageTurnSound()
+    {
+        PageTurning.Play();
     }
 
 }

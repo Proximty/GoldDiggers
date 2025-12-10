@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Flicker : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Flicker : MonoBehaviour
     private Renderer rend;
     private MaterialPropertyBlock mpb;
 
+    private string _sceneName;
+
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -30,7 +33,11 @@ public class Flicker : MonoBehaviour
 
     void Update()
     {
-        FadeEmission();
+        _sceneName = SceneManager.GetActiveScene().name;
+        if (_sceneName != "level 1")
+        {
+            FadeEmission();
+        }
     }
     /// <summary>
     /// makes it fade in and out 

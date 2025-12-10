@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class level : MonoBehaviour
 {
     public bool _Allminerals = false;
-    public  GameObject _UINextLevel;
     [SerializeField] private gamemanager _Manager;
     private SpawnGem _spawnGem;
     [SerializeField] private Stonerarity _stonteScipt;
@@ -29,10 +28,7 @@ public class level : MonoBehaviour
             if (_Allminerals == true)
             {  
               _stoneInfo.SetActive(true);
-               if (_stoneInfo == true)
-               {
-                _UINextLevel.SetActive(true);
-               }
+               
 
             }
         //}

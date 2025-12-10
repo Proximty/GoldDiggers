@@ -19,6 +19,7 @@ public class dirt : MonoBehaviour, IBrushable
     [SerializeField] private GameObject _brushPrefab;
     [SerializeField] private AudioSource _brushSound;
     [SerializeField] private AudioSource _MagicSound;
+    [SerializeField] private ParticleSystem _sparkle;
 
 
     [Header("dirt")]
@@ -92,6 +93,7 @@ public class dirt : MonoBehaviour, IBrushable
     private void MagicSound()
     {
         _MagicSound.Play();
+        _sparkle.Play();
     }
    
     //deze functie bepaalt de groote van de dirt

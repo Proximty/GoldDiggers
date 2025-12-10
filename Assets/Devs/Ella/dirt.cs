@@ -17,6 +17,8 @@ public class dirt : MonoBehaviour, IBrushable
     [SerializeField] public bool BrushActive = false;
     [SerializeField] private float _timer;
     [SerializeField] private GameObject _brushPrefab;
+    [SerializeField] private AudioSource _brushSound;
+    [SerializeField] private AudioSource _MagicSound;
 
     [Header("dirt")]
     [SerializeField] private GameObject _dirt3;
@@ -47,18 +49,23 @@ public class dirt : MonoBehaviour, IBrushable
                         _dirt3.SetActive(false);
                         _dirt2.SetActive(true);
                         _stageDirt++;
+                        BrushSound();
                         break;
                     case 2:
                         _dirt2.SetActive(false);
                         _dirt1.SetActive(true);
                         _stageDirt++;
-                        
+                        BrushSound();
+
+
                         break;
                     case 3:
                         Debug.Log("U removed the dirt from the rock");
                         //_gem.SetActive(true);
                         _stoneInfo.SetActive(true);
                         Destroy(this.gameObject);
+                        BrushSound();
+                        MagicSound();
                         break;
                 }
 
@@ -75,6 +82,15 @@ public class dirt : MonoBehaviour, IBrushable
     {
         BrushActive = awake;
     }
+    private void BrushSound()
+    {
+        _brushSound.Play();
+    }
+
+    private void MagicSound()
+    {
+        _MagicSound.Play();
+    }
     //deze functie bepaalt de groote van de dirt
     //private void SetTransfromOfDirt(float size)
     //{
@@ -82,7 +98,7 @@ public class dirt : MonoBehaviour, IBrushable
 
     //}
 
-    
+
 
 
 }

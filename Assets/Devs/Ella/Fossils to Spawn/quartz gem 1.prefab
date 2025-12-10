@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  value: 0
+  _Manager: {fileID: 0}
+  Value: 0
 --- !u!114 &63983443766032038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,13 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een kwarts kristal gevonden! Dit schitterende mineraal groeide
-    diep in de aarde, vormend over miljoenen jaren terwijl hitte en druk hun werk
-    deden. Deze helder glanzende stenen worden meestal in bergen of rivierbeddingen
-    gevonden. Wat voert jou hierheen, sprankelende vriend?
+  FossilInfo: Woah, wat een prachtig exemplaar van een kwartskristal! Deze edelsteensoort
+    vormt 12% van de aardkorst en is echt super sterk! De grootste kwarts ooit gevonden
+    is wel 3 meter hoog en 3 meter breed!
   _pickUpScipt: {fileID: 5762663078087474113}
   dirt: {fileID: 0}
   coll: {fileID: 7128108409663518970}
+  _sceneName: 
 --- !u!65 &7128108409663518970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -163,5 +163,5 @@ MonoBehaviour:
   glowColor: {r: 0.96981126, g: 0.042086042, b: 0.9607851, a: 0.18039216}
   minIntensity: 0
   maxIntensity: 1.5
-  flickerSpeed: 2
+  fadeSpeed: 2
   emissionStrength: 0.5

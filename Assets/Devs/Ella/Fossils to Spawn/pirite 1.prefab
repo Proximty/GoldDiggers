@@ -127,13 +127,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een pyriet kristal gevonden! Dit is een glanzend, goudkleurig
-    mineraal dat al miljoenen jaren geleden diep onder de grond werd gevormd. Deze
-    opvallend heldere kubusjes worden meestal in gesteentelagen of oude mijngebieden
-    gevonden. Hoe ben jij hier terechtgekomen, blinkende vriend?
+  FossilInfo: "Eureka! Goud! Dit\u2013 oh.. Het is maar pyriet.. deze goud na-aper
+    werd door de oude Grieken gebruikt om vuur mee te maken! Hedendaags wordt het
+    vooral gebruikt voor het maken van inkt, kunstmest en allerlei andere nuttige
+    dingen."
   _pickUpScipt: {fileID: 7018706027650891652}
   dirt: {fileID: 0}
   coll: {fileID: 2470418870767567235}
+  _sceneName: 
 --- !u!114 &7018706027650891652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,8 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  value: 0
+  _Manager: {fileID: 0}
+  Value: 0
 --- !u!114 &924056425370827611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,5 +164,5 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.9083814, b: 0, a: 0.1254902}
   minIntensity: 0
   maxIntensity: 2
-  flickerSpeed: 2
+  fadeSpeed: 2
   emissionStrength: 0.5

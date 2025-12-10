@@ -44,7 +44,7 @@ public class catalogus : MonoBehaviour
             KwartsInfo.SetActive(false);
             PyrietInfo.SetActive(false);
             SfalerietInfo.SetActive(false);
-            Instantiate(Ammonite);
+            //Instantiate(Ammonite);
         }
         else if (currentImageIndex == 1)
         {
@@ -94,6 +94,11 @@ public class catalogus : MonoBehaviour
     public void PageTurnSound()
     {
         PageTurning.Play();
+    }
+
+    public void GoBack()
+    { 
+        SceneManager.LoadScene("fossils");
     }
 
 }

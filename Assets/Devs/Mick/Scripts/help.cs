@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class help : MonoBehaviour
 {
@@ -6,12 +7,10 @@ public class help : MonoBehaviour
     public GameObject Button;
     public void OpenHelp()
     {
-        Canvas.SetActive(true);
-        Button.SetActive(false);
+         SceneManager.LoadScene("Mick scene");
     }
     public void CloseHelp()
     {
-        Canvas.SetActive(false);
-        Button.SetActive(true);
+        SceneManager.LoadScene("fossils");
     }
 }

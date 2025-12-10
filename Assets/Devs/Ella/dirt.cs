@@ -11,8 +11,8 @@ public class dirt : MonoBehaviour, IBrushable
     /// het speelt ook de bruh anim af nadat er geklikt is op de dirt
     /// </summary>
     [SerializeField] private GameObject _gem;
-    [SerializeField] private Stonerarity _stonteScipt;
-    [SerializeField] private GameObject _stoneInfo;
+    //[SerializeField] private Stonerarity _stonteScipt;
+    //public GameObject _stoneInfo;
     [SerializeField] private int _stageDirt = 1;
     [SerializeField] public bool BrushActive = false;
     [SerializeField] private float _timer;
@@ -20,14 +20,16 @@ public class dirt : MonoBehaviour, IBrushable
     [SerializeField] private AudioSource _brushSound;
     [SerializeField] private AudioSource _MagicSound;
 
+
     [Header("dirt")]
     [SerializeField] private GameObject _dirt3;
     [SerializeField] private GameObject _dirt2;
     [SerializeField] private GameObject _dirt1;
-
+   
     private void Update()
     {
         _timer += Time.deltaTime;
+        
     }
     //functie voor het schoonmaken/brushen van stenen
     public void Brush(int Plevel)
@@ -62,10 +64,10 @@ public class dirt : MonoBehaviour, IBrushable
                     case 3:
                         Debug.Log("U removed the dirt from the rock");
                         //_gem.SetActive(true);
-                        _stoneInfo.SetActive(true);
                         Destroy(this.gameObject);
                         BrushSound();
                         MagicSound();
+                        
                         break;
                 }
 
@@ -91,6 +93,7 @@ public class dirt : MonoBehaviour, IBrushable
     {
         _MagicSound.Play();
     }
+   
     //deze functie bepaalt de groote van de dirt
     //private void SetTransfromOfDirt(float size)
     //{

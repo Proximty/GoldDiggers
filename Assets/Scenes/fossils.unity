@@ -231,6 +231,8 @@ MonoBehaviour:
   _Allminerals: 0
   _UINextLevel: {fileID: 141998373}
   _Manager: {fileID: 1957731691}
+  _stonteScipt: {fileID: 625772153}
+  _stoneInfo: {fileID: 439376600}
 --- !u!4 &69989016
 Transform:
   m_ObjectHideFlags: 0
@@ -626,7 +628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &439376601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1991,8 +1993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gem: {fileID: 625772150}
-  _stonteScipt: {fileID: 625772153}
-  _stoneInfo: {fileID: 439376600}
   _stageDirt: 1
   BrushActive: 0
   _timer: 0

@@ -481,6 +481,8 @@ MonoBehaviour:
   _Allminerals: 0
   _UINextLevel: {fileID: 141998373}
   _Manager: {fileID: 1957731691}
+  _stonteScipt: {fileID: 625772153}
+  _stoneInfo: {fileID: 439376600}
 --- !u!4 &69989016
 Transform:
   m_ObjectHideFlags: 0
@@ -960,7 +962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.8032837, y: -1.0895996}
+  m_AnchoredPosition: {x: -9.9, y: -30}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503326007
@@ -1048,7 +1050,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -851.70404, y: -34.779762, z: -351.6404, w: -112.434814}
+  m_margin: {x: -28.496689, y: -34.779762, z: -351.6404, w: -112.434814}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2329,8 +2331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gem: {fileID: 625772150}
-  _stonteScipt: {fileID: 625772153}
-  _stoneInfo: {fileID: 439376600}
   _stageDirt: 1
   BrushActive: 0
   _timer: 0

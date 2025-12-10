@@ -15,6 +15,7 @@ public class rock1 : MonoBehaviour, IBreakable
     [SerializeField] public bool ActiveAxe = false;
     [SerializeField] private GameObject _axePrefab;
     [SerializeField] private float _timer;
+    [SerializeField] private AudioSource _rockSound;
     private void Update()
     {
         _timer += Time.deltaTime;
@@ -35,14 +36,17 @@ public class rock1 : MonoBehaviour, IBreakable
                     case 1:
                         SetTransfromOfRock(1.6960754f);
                         _stageRock++;
+                        RockSound();
                         break;
                     case 2:
                         SetTransfromOfRock(1.1855062f);
                         _stageRock++;
+                        RockSound();
                         break;
                     case 3:
                         _dirt.SetActive(true);
                         _gem.SetActive(true);
+                        RockSound();
                         Destroy(_daROCK);
                         break;
                 }
@@ -67,5 +71,10 @@ public class rock1 : MonoBehaviour, IBreakable
     private void SetTransfromOfRock(float size)
     {
         _daROCK.transform.localScale = new Vector3(size, size, size);
+    }
+
+    private void RockSound()
+    {
+        _rockSound.Play();
     }
 }

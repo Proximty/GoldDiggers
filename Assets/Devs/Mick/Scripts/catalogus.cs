@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class catalogus : MonoBehaviour
 {
     public int currentImageIndex = 0;
+    public GameObject Ammonite;
     public GameObject AmmonietInfo;
     public GameObject KwartsInfo;
     public GameObject PyrietInfo;
     public GameObject SfalerietInfo;
+    public AudioSource clickSound;
+    public AudioSource PageTurning;
 
     public void Start()
     {
@@ -41,6 +44,7 @@ public class catalogus : MonoBehaviour
             KwartsInfo.SetActive(false);
             PyrietInfo.SetActive(false);
             SfalerietInfo.SetActive(false);
+            Instantiate(Ammonite);
         }
         else if (currentImageIndex == 1)
         {
@@ -66,6 +70,8 @@ public class catalogus : MonoBehaviour
     }
     public void Next()
     {
+        ClickSound();
+        PageTurnSound();
         currentImageIndex = currentImageIndex + 1;
         Debug.Log("het klik");
         Debug.Log(currentImageIndex);
@@ -73,9 +79,21 @@ public class catalogus : MonoBehaviour
 
     public void Previous()
     {
+        ClickSound();
+        PageTurnSound();
         currentImageIndex = currentImageIndex - 1;
         Debug.Log("het klik");
         Debug.Log(currentImageIndex);
+    }
+
+    public void ClickSound()
+    {
+        clickSound.Play();
+    }
+
+    public void PageTurnSound()
+    {
+        PageTurning.Play();
     }
 
 }

@@ -7,9 +7,13 @@ public class Stonerarity : MonoBehaviour
 {
     [Header("Prefabs")]
     [SerializeField] private List<GameObject> prefabs = new List<GameObject>();
+    [SerializeField] private List<GameObject> audio = new List<GameObject>();
+
+    [SerializeField] public int index;
     
     [Header("Spawn Chances (groter is makkelijker te krijgen)")]
     [SerializeField] private List<float> chance = new List<float> {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+
     [SerializeField] TextMeshProUGUI FossilText;
     public GameObject SelectedPrefab;
 
@@ -53,8 +57,17 @@ public class Stonerarity : MonoBehaviour
         //It loops through prefabs and determines which one the random value falls into
         foreach (GameObject p in prefabs)
         {
+            //if (randomValue < chance[i])
+            //    //num = i;
+            //    return p;
+
+            //randomValue -= chance[i];
+            //i++;
             if (randomValue < chance[i])
-                return p;
+            {
+                index = i; // Save the index of the selected prefab
+                return (p); // Return the prefab and its index as a tuple
+            }
 
             randomValue -= chance[i];
             i++;

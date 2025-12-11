@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  value: 0
+  _Manager: {fileID: 0}
+  Value: 0
 --- !u!114 &3968123070893979999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,14 +141,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een calciet kristal gevonden! Dit is een helder, vaak melkachtig
-    wit mineraal dat miljoenen jaren geleden diep in de aarde werd gevormd door langzaam
-    neerslaande mineralen uit water. Deze mooi gevormde kristallen worden meestal
-    in grotten, gesteentelagen of oude kalkafzettingen gevonden. Wat voert jou hierheen,
-    kalme glansdrager?
+  FossilInfo: Calciet! Dit is echt een bouwsteen van onze samenleving! Letterlijk!
+    Deze steen wordt gebruikt voor het maken van gebouwen en zelfs onze stoeptegels
+    worden hiervan gemaakt! Ondanks dat het voornamelijk bestaat uit zout, raad ik
+    het niet aan om deze te eten!
   _pickUpScipt: {fileID: 6659644803564997337}
   dirt: {fileID: 0}
   coll: {fileID: 1082235029213229069}
+  _sceneName: 
 --- !u!114 &-4291308524847830502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,5 +164,5 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.16470589}
   minIntensity: 0
   maxIntensity: 1.5
-  flickerSpeed: 2
+  fadeSpeed: 2
   emissionStrength: 0.5

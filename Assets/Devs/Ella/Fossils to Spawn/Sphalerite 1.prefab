@@ -131,13 +131,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een sphaleriet kristal gevonden! Dit is een glanzend mineraal
-    dat miljoenen jaren geleden diep onder de aarde werd gevormd uit zinkrijke oplossingen.
-    Deze fonkelende kristallen worden meestal in metaalrijke gesteentelagen of oude
-    mijngebieden gevonden.   Hoe ben jij hier terechtgekomen, donkere schitteraar?
+  FossilInfo: Wauw, een prachtig exemplaar Sfaleriet (ook wel bekend als Zinkblende)!
+    Dit is eigenlijk een mengsel van allemaal soorten metaal, waaronder ijzer! Maar
+    zoals de naam al zegt bestaat deze mineraal voornamelijk uit zink, maar liefst
+    67%
   _pickUpScipt: {fileID: 1344033664059307099}
   dirt: {fileID: 0}
   coll: {fileID: 6557635907643926054}
+  _sceneName: 
 --- !u!114 &1344033664059307099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
-  value: 0
+  _Manager: {fileID: 0}
+  Value: 0
 --- !u!114 &3429870977551821953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,5 +168,5 @@ MonoBehaviour:
   glowColor: {r: 0.7132075, g: 0.5953494, b: 0.13860443, a: 0.27450982}
   minIntensity: 0
   maxIntensity: 1.5
-  flickerSpeed: 2.03
+  fadeSpeed: 2
   emissionStrength: 0.5

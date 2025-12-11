@@ -11,46 +11,33 @@ public class catalogus : MonoBehaviour
     public AudioSource clickSound;
     public AudioSource PageTurning;
 
-    public void Start()
-    {
-        
-    }
-    public void Update()
-    {
-
-       
-    }
-
-
     //go to the next image
     public void Next()
     {
-        //ClickSound();
-        //PageTurnSound();
+        
         ClickSound();
         _fossils[currentImageIndex].SetActive(false);
         currentImageIndex++;
         if (currentImageIndex == _fossils.Count)
         {
             currentImageIndex = 0;
-            _fossils[currentImageIndex].SetActive(true);
-
-        }
-        else
-        {
-            _fossils[currentImageIndex].SetActive(true);
             
-            PageTurnSound();
         }
-        
-    
+        _fossils[currentImageIndex].SetActive(true);
+            
         
     }
-
+    //go to previous image
     public void Previous()
     {
         ClickSound();
-        PageTurnSound();
+        _fossils[currentImageIndex].SetActive(false);
+        currentImageIndex--;
+        if(currentImageIndex == -1)
+        {
+            currentImageIndex = _fossils.Count - 1;
+        }
+        _fossils[currentImageIndex].SetActive(true);
         
     }
 
@@ -59,10 +46,7 @@ public class catalogus : MonoBehaviour
         clickSound.Play();
     }
 
-    public void PageTurnSound()
-    {
-        PageTurning.Play();
-    }
+    
 
     
 

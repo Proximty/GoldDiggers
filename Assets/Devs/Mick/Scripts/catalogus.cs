@@ -9,19 +9,16 @@ public class catalogus : MonoBehaviour
     public int currentImageIndex = 0;
     [SerializeField] private List<GameObject> _fossils = new List<GameObject>();
     public AudioSource clickSound;
-    public AudioSource PageTurning;
 
     //go to the next image
     public void Next()
     {
-        
         ClickSound();
         _fossils[currentImageIndex].SetActive(false);
         currentImageIndex++;
         if (currentImageIndex == _fossils.Count)
         {
             currentImageIndex = 0;
-            
         }
         _fossils[currentImageIndex].SetActive(true);
             

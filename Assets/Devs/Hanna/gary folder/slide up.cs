@@ -26,7 +26,7 @@ public class SlideUpText : MonoBehaviour
     private RectTransform rt;
     private Vector2 startPos;
     private Vector2 targetPos;
-
+   public AudioSource _AudioSource;
     [Header("turn of instructions")]
     [SerializeField] private GameObject _vergrootglas;
     [SerializeField] private GameObject _gameTuruorial;
@@ -44,6 +44,7 @@ public class SlideUpText : MonoBehaviour
             Play();
         _vergrootglas.SetActive(false);
         _gameTuruorial.SetActive(false);
+        _AudioSource = GameObject.Find("AudioSource").GetComponent<AudioSource>();
     }
 
     /// <summary>
@@ -62,6 +63,7 @@ public class SlideUpText : MonoBehaviour
     {
         if (stopAnimation) StopAllCoroutines();
         rt.anchoredPosition = startPos;
+        _AudioSource.Play();
     }
     private IEnumerator SlideRoutine()
     {

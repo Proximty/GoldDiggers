@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
@@ -19,10 +17,6 @@ public class FossilManager : MonoBehaviour
     [SerializeField] private Stonerarity _gemScipt;
     [SerializeField] private bool _rocksFound = false;
 
-
-    [Header("for debugging")]
-    string dugUpRocksItems = "";
-
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -30,8 +24,6 @@ public class FossilManager : MonoBehaviour
 
     private void Update()
     {
-       
-        
         _sceneName = SceneManager.GetActiveScene().name;
         if ((_sceneName == "fossils" || _sceneName == "rocks" ) )
         {

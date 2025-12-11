@@ -30,14 +30,6 @@ public class TouchDetection : MonoBehaviour
         {
             _fossilManager = GameObject.Find("FossilManager").GetComponent<FossilManager>();
             _fossilManager =Object.FindAnyObjectByType<FossilManager>();
-            if (_fossilManager == null)
-            {
-                Debug.LogError("FossilManger could not be found");
-            }
-            else
-            {
-                Debug.LogError("FossilManger was actually found");
-            }
         }
         CheckForTouchInput();
         
@@ -72,15 +64,7 @@ public class TouchDetection : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(screenPOs);
         RaycastHit hit;
 
-        if (Camera.main == null)
-        {
-            Debug.LogError("Main Camera is not set or is missing in the build.");
-            return;
-        }
-        else
-        {
-            Debug.LogError("the main camera is not missing");
-        }
+        
             // begin linerenderer op de camera
             _lineRenderer.SetPosition(0, ray.origin);
 

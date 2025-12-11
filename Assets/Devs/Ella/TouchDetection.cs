@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class TouchDetection : MonoBehaviour
     /// </summary>
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private FossilManager _fossilManager;
+    [SerializeField] private TextMeshProUGUI ScreenText;
 
     private void Start()
     {
@@ -26,7 +28,7 @@ public class TouchDetection : MonoBehaviour
 
     private void Update()
     {
-        CheckForTouchInput();
+        CheckForTouchInput(); ///!
     }
     /// <summary>
     /// functie voor het detecten van muis en touch input voor andriod
@@ -47,9 +49,9 @@ public class TouchDetection : MonoBehaviour
         //kijk of er geklikt is op het scherm
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("mouse button pressed");
+            Debug.Log("mouse button pressed"); ///!
             //haal de positie op van de klik en stuur een raycast ernaartoe
-            DetectObject(Input.mousePosition);
+            DetectObject(Input.mousePosition); ///!!!!
         }
     }
     void DetectObject(Vector2 screenPOs)
@@ -57,6 +59,13 @@ public class TouchDetection : MonoBehaviour
         // maak een raycast aan 
         Ray ray = Camera.main.ScreenPointToRay(screenPOs);
         RaycastHit hit;
+
+        if (Camera.main == null)
+        {
+            Debug.LogError("Main Camera is not set or is missing in the build.");
+            return;
+        }
+
 
         // begin linerenderer op de camera
         _lineRenderer.SetPosition(0, ray.origin);
@@ -99,6 +108,7 @@ public class TouchDetection : MonoBehaviour
             }
             else if (gotorock != null)
             {
+                Debug.Log("It wants to go to a rock scene right?");
                 _fossilManager.NameOfRocks.Add(hitOBJ.name);
                 gotorock.GoToRockSceneHEHE();
             }

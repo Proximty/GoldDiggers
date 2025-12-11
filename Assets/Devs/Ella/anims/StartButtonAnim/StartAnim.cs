@@ -41,7 +41,6 @@ public class StartAnim : MonoBehaviour
         //loop door elke sprite in de list
         foreach (var sprite in Sprites)
         {
-            Debug.Log(sprite.name);
             _spriteIMG.sprite = sprite;
             yield return new WaitForSeconds(0.1f);
         }

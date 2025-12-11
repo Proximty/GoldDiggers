@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Manager: {fileID: 0}
-  Value: 0
+  _manager: {fileID: 0}
+  value: 0
 --- !u!114 &8067117227643183438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,14 +141,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Kijk uit! Deze vlijmscherpe tand is van een Megalodon. Een oude Haaiensoort
-    van 3,6 miljoen jaar geleden. Ze werden wel 20 meter lang! Omdat ze zo groot
-    waren, konden deze beesten zelfs walvissen eten. Gelukkig hoef je hier niet meer
-    bang voor te zijn
+  FossilInfo: Je hebt een tandfossiel gevonden! Dit is een versteende tand van een
+    dier dat miljoenen jaren geleden leefde en waarvan juist de harde tanden het
+    best bewaard blijven. Deze scherpe overblijfselen worden meestal gevonden in
+    oude zeebodems, rivierlagen of kliffen waar sediment alles heeft geconserveerd.
+    Hoe ben jij hier terechtgekomen, taaie bijter?
   _pickUpScipt: {fileID: 833615431300932111}
   dirt: {fileID: 0}
   coll: {fileID: 6830703450208200527}
-  _sceneName: 
 --- !u!114 &4418383945327826833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,5 +164,5 @@ MonoBehaviour:
   glowColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.20392157}
   minIntensity: 0
   maxIntensity: 2
-  fadeSpeed: 2
+  flickerSpeed: 2
   emissionStrength: 0.5

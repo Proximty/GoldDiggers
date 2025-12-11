@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Manager: {fileID: 0}
-  Value: 0
+  _manager: {fileID: 0}
+  value: 0
 --- !u!114 &9023321470205723530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,13 +177,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: "Aaaa! Een zeemonster! Oh.. Het is maar een Plesiosaurus. Deze zeereptielen
-    konden wel 15 meter lang worden. Alhoewel ze niet de snelste waren, konden ze
-    wel heel goed door het water \u2018vliegen\u2019 met hun flippers."
+  FossilInfo: "Je hebt een Plesiosaurusfossiel gevonden! Dit is een uitgestorven
+    zeereptiel dat miljoenen jaren geleden met zijn lange nek en brede vinnen door
+    de oerzee\xEBn gleed. De resten van deze sierlijke zwemmer worden meestal gevonden
+    in oude zeebodems die nu als rotslagen zichtbaar zijn. Hoe ben jij hier terechtgekomen,
+    slanke zeereiziger?"
   _pickUpScipt: {fileID: 5113336408593099118}
   dirt: {fileID: 0}
   coll: {fileID: 7355509599479813818}
-  _sceneName: 
 --- !u!114 &859947526461933457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,5 +200,5 @@ MonoBehaviour:
   glowColor: {r: 1, g: 1, b: 1, a: 0.26666668}
   minIntensity: 0
   maxIntensity: 1.5
-  fadeSpeed: 2
+  flickerSpeed: 2
   emissionStrength: 0.5

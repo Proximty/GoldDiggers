@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297ddb1b00260fb40a1fcd1d88ec0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Manager: {fileID: 0}
-  Value: 0
+  _manager: {fileID: 0}
+  value: 0
 --- !u!114 &6680398894470056168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,14 +141,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: "Aaah! Ik schrok me een hoedje! Deze Mosasaurus schedel lijkt net echt!
-    Deze enorme beesten leefden zo\u2019n 66 miljoen jaar geleden en werden voor
-    het eerst hier in Nederland gevonden. Technisch gezien zijn het geen dinosauri\xEBrs,
-    maar gewoon hele grote hagedissen."
+  FossilInfo: "Je hebt een Mosasaurusfossiel gevonden! Dit is een uitgestorven zeereptiel
+    dat miljoenen jaren geleden door de oerzee\xEBn zwom. De resten van deze machtige
+    jager worden meestal gevonden in oude zeebodems die nu droog land zijn. Hoe ben
+    jij hier terechtgekomen, vriend? "
   _pickUpScipt: {fileID: 2913184075331656529}
   dirt: {fileID: 0}
   coll: {fileID: 1572815419394949891}
-  _sceneName: 
 --- !u!114 &-2051490734155954644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,5 +163,5 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.9971435, b: 0.9641509, a: 0.24313726}
   minIntensity: 0
   maxIntensity: 1.5
-  fadeSpeed: 2
+  flickerSpeed: 2
   emissionStrength: 0.5

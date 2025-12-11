@@ -923,7 +923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &439376601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +1921,12 @@ MonoBehaviour:
   - {fileID: 1856893866}
   - {fileID: 1106300436}
   - {fileID: 1742461592}
+  spriteX:
+  - {fileID: 2800000, guid: ce6bfca2280912c4280ea75ea87ea767, type: 3}
+  - {fileID: 2800000, guid: 8be2965a9b5da674d97325bd102936b0, type: 3}
+  - {fileID: 2800000, guid: bb3bbddd5dbfc4d49bbe796a96f967d1, type: 3}
+  - {fileID: 2800000, guid: bb3bbddd5dbfc4d49bbe796a96f967d1, type: 3}
+  garrySprite: {fileID: 1556552001}
 --- !u!1 &888730446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,8 +2866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.1, y: -59.502747}
-  m_SizeDelta: {x: 53.3185, y: 312.1597}
+  m_AnchoredPosition: {x: 45.287, y: 12.43}
+  m_SizeDelta: {x: 62.945, y: 456.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556552001
 MonoBehaviour:

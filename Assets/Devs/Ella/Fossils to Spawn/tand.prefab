@@ -144,11 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een tandfossiel gevonden! Dit is een versteende tand van een
-    dier dat miljoenen jaren geleden leefde en waarvan juist de harde tanden het
-    best bewaard blijven. Deze scherpe overblijfselen worden meestal gevonden in
-    oude zeebodems, rivierlagen of kliffen waar sediment alles heeft geconserveerd.
-    Hoe ben jij hier terechtgekomen, taaie bijter?
+  FossilInfo: 'Kijk uit! Deze vlijmscherpe tand is van een Megalodon. Een oude Haaiensoort
+    van 3,6 miljoen jaar geleden. Ze werden wel 20 meter lang! Omdat ze zo groot
+    waren, konden deze beesten zelfs walvissen eten. Gelukkig hoef je hier niet meer
+    bang voor te zijn. '
   _pickUpScipt: {fileID: 833615431300932111}
   dirt: {fileID: 0}
   coll: {fileID: 6830703450208200527}

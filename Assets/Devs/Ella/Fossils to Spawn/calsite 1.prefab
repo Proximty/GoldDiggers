@@ -144,11 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e2604eae1383242b14ddfd655d4696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FossilInfo: Je hebt een calciet kristal gevonden! Dit is een helder, vaak melkachtig
-    wit mineraal dat miljoenen jaren geleden diep in de aarde werd gevormd door langzaam
-    neerslaande mineralen uit water. Deze mooi gevormde kristallen worden meestal
-    in grotten, gesteentelagen of oude kalkafzettingen gevonden. Wat voert jou hierheen,
-    kalme glansdrager?
+  FossilInfo: Calciet! Dit is echt een bouwsteen van onze samenleving! Letterlijk!
+    Deze steen wordt gebruikt voor het maken van gebouwen en zelfs onze stoeptegels
+    worden hiervan gemaakt! Ondanks dat het voornamelijk bestaat uit zout, raad ik
+    het niet aan om deze te eten
   _pickUpScipt: {fileID: 6659644803564997337}
   dirt: {fileID: 0}
   coll: {fileID: 1082235029213229069}

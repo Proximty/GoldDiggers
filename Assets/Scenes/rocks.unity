@@ -1577,13 +1577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentImageIndex: 0
-  Ammonite: {fileID: 0}
-  AmmonietInfo: {fileID: 0}
-  KwartsInfo: {fileID: 0}
-  PyrietInfo: {fileID: 0}
-  SfalerietInfo: {fileID: 0}
+  _fossils: []
   clickSound: {fileID: 0}
-  PageTurning: {fileID: 0}
 --- !u!1 &798179675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,7 +2535,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556551999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2548,7 +2543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.697937, y: -59.502747}
+  m_AnchoredPosition: {x: 50.1, y: -59.502747}
   m_SizeDelta: {x: 53.3185, y: 312.1597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556552001

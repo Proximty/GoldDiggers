@@ -3,9 +3,10 @@ using UnityEngine;
 public class TurnOnUi : MonoBehaviour
 {
     [SerializeField] private GameObject _uiToTurnOn;
+    [SerializeField] private GameObject _uiToTurnOff;
     public void TurnUiOn()
     {
         _uiToTurnOn.SetActive(true);
-        this.gameObject.SetActive(false);
+        _uiToTurnOff.SetActive(false);
     }
 }

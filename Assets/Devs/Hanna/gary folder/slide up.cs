@@ -27,6 +27,10 @@ public class SlideUpText : MonoBehaviour
     private Vector2 startPos;
     private Vector2 targetPos;
 
+    [Header("turn of instructions")]
+    [SerializeField] private GameObject _vergrootglas;
+    [SerializeField] private GameObject _gameTuruorial;
+
     void Awake()
     {
         rt = GetComponent<RectTransform>();
@@ -38,6 +42,8 @@ public class SlideUpText : MonoBehaviour
     {
         if (playOnStart)
             Play();
+        _vergrootglas.SetActive(false);
+        _gameTuruorial.SetActive(false);
     }
 
     /// <summary>

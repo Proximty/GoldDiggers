@@ -9,6 +9,7 @@ public class level : MonoBehaviour
     private SpawnGem _spawnGem;
     [SerializeField] private Stonerarity _stonteScipt;
     public GameObject _stoneInfo;
+    public SlideUpText _stoneInfoText;
     public void Start()
     {
         _stonteScipt = GameObject.Find("Stone rarity").GetComponent<Stonerarity>();
@@ -23,15 +24,13 @@ public class level : MonoBehaviour
  
     public void Stones()
     {
-        //if (_spawnGem.Animator.GetBool("Rotation") == true)
-        //{
+        
             if (_Allminerals == true)
             {  
               _stoneInfo.SetActive(true);
-               
-
             }
-        //}
+        
+
     }
     /// <summary>
     /// this makes the scene changes

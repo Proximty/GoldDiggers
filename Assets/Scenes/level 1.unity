@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scenename: catalogus
+  _slideUpText: {fileID: 0}
 --- !u!1 &686324040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scenename: SplashScreen
+  _slideUpText: {fileID: 0}
 --- !u!114 &1396172516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,7 +1496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a3aeb74e26ac2429e83226508a7104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fossil: 
 --- !u!114 &1659818045
 MonoBehaviour:
   m_ObjectHideFlags: 0

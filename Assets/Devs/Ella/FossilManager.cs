@@ -17,6 +17,8 @@ public class FossilManager : MonoBehaviour
     [SerializeField] private Stonerarity _gemScipt;
     [SerializeField] private bool _rocksFound = false;
 
+    [SerializeField] public bool RockChosen = false;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -48,7 +50,6 @@ public class FossilManager : MonoBehaviour
             //find the dupuprocks though the name
             if(_rocksFound == false)
             {
-                
                 foreach (string name in NameOfRocks)
                 {
                     DugUpRocks.Add(GameObject.Find(name));
@@ -65,6 +66,7 @@ public class FossilManager : MonoBehaviour
         }
         else
         {
+            RockChosen = false;
             //clear the list so that it doesnt cause problems in lvl 1
             DugUpRocks.Clear();
             _rocksFound= false;

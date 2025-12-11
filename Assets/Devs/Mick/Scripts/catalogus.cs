@@ -1,6 +1,5 @@
 using JetBrains.Annotations;
 using System.Collections.Generic;
-using Unity.Android.Gradle;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

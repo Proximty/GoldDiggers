@@ -26,7 +26,21 @@ public class TouchDetection : MonoBehaviour
 
     private void Update()
     {
+        while(_fossilManager == null)
+        {
+            _fossilManager = GameObject.Find("FossilManager").GetComponent<FossilManager>();
+            _fossilManager =Object.FindAnyObjectByType<FossilManager>();
+            if (_fossilManager == null)
+            {
+                Debug.LogError("FossilManger could not be found");
+            }
+            else
+            {
+                Debug.LogError("FossilManger was actually found");
+            }
+        }
         CheckForTouchInput();
+        
     }
     /// <summary>
     /// functie voor het detecten van muis en touch input voor andriod
@@ -58,8 +72,17 @@ public class TouchDetection : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(screenPOs);
         RaycastHit hit;
 
-        // begin linerenderer op de camera
-        _lineRenderer.SetPosition(0, ray.origin);
+        if (Camera.main == null)
+        {
+            Debug.LogError("Main Camera is not set or is missing in the build.");
+            return;
+        }
+        else
+        {
+            Debug.LogError("the main camera is not missing");
+        }
+            // begin linerenderer op de camera
+            _lineRenderer.SetPosition(0, ray.origin);
 
         //functie om een raycast te tekenen naar het object en info op te halen
         if (Physics.Raycast(ray, out hit))
@@ -99,6 +122,8 @@ public class TouchDetection : MonoBehaviour
             }
             else if (gotorock != null)
             {
+                //this is being hit btw
+                
                 _fossilManager.NameOfRocks.Add(hitOBJ.name);
                 gotorock.GoToRockSceneHEHE();
             }

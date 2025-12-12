@@ -10,10 +10,9 @@ public class GetRidOfRockManger : MonoBehaviour
     }
     public void DelelteRockMangerScript()
     {
-        if (RockManager != null)
-        {
+       
 
             Destroy(RockManager);
-        }
+        
     }
 }

@@ -13,6 +13,8 @@ public class TouchDetection : MonoBehaviour
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private FossilManager _fossilManager;
 
+    private bool chosen = false;
+
     private void Start()
     {
         // LineRenderer instellingen zodat dit te zien is in de schene view
@@ -106,10 +108,14 @@ public class TouchDetection : MonoBehaviour
             }
             else if (gotorock != null)
             {
-                //this is being hit btw
                 
-                _fossilManager.NameOfRocks.Add(hitOBJ.name);
-                gotorock.GoToRockSceneHEHE();
+                if (chosen == false)
+                {
+                    chosen = true;
+                    _fossilManager.NameOfRocks.Add(hitOBJ.name);
+                    gotorock.GoToRockSceneHEHE();
+                    
+                }
             }
             else
             {

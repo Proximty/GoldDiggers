@@ -43,6 +43,12 @@ public class FossilManager : MonoBehaviour
         {
             _fossilAdded = false;
         }
+        if(_sceneName == "SplashScreen")
+        {
+            DugUpRocks.Clear();
+            NameOfRocks.Clear();
+            FossilPrefabs.Clear();
+        }
 
         if(_sceneName == "level 1")
         {
@@ -63,6 +69,7 @@ public class FossilManager : MonoBehaviour
                 Instantiate(FossilPrefabs[i], DugUpRocks[i].transform.position, DugUpRocks[i].transform.rotation);
                 Destroy(DugUpRocks[i]);
             }
+            DugUpRocks.Clear();
         }
         else
         {
